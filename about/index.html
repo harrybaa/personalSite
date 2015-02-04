@@ -1,0 +1,99 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+  <title>Wei Liu's Home Page</title>
+  <link rel="stylesheet" type="text/css" href="../css/main.css"/>
+  <link rel="stylesheet" type="text/css" href="../css/about.css">
+  <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1">
+  <script type="text/javascript" src="../js/jquery.js"></script>
+  <script type="text/javascript" src="../js/ready.js"></script>
+</head>
+<body>
+  <div class="loading-wrapper">
+    <div class="loading">
+      <span>
+        <img class="load-pic" src="../src/load_pic.png"/>
+        <h1 class="load-title">My zealous hear is<br> <span class="firing">FIRING...</span></h1>
+      </span>
+    </div>
+  </div>
+
+  <div class="nav-block">
+    <ul class="top-nav">
+      <li class="nav-index" >
+        <a href="./index.html">
+          <span><img src="../src/load_pic.png"></span>
+          <span id="navIndexTitle">&nbsp;Wei Liu's <br>&nbsp;Dream Home</span>
+        </a>
+      </li>
+      <li class="nav-item"><a id="top-nav2" href="./constructing.html">Intern</a></li>
+      <li class="nav-item"><a id="top-nav3" href="./constructing.html">Projects</a></li>
+      <li class="nav-item"><a id="top-nav4" href="./constructing.html">Activities</a></li>
+      <li class="nav-item"><a id="top-nav5" href="./constructing.html">Essays</a></li>
+      <li class="nav-item"><a id="top-nav6" href="./constructing.html">About</a></li>
+    </ul>
+    <div class="top-mobile-menu" id="mobileMenu">
+      <p>MENU</p>
+    </div>
+  </div>
+
+  <div class="mobile-menu">
+    <ul class="mobile-nav">
+      <li class="mobile-nav-item"><a href="./constructing.html">Intern</a></li>
+      <li class="mobile-nav-item"><a href="./constructing.html">Projects</a></li>
+      <li class="mobile-nav-item"><a href="./constructing.html">Activities</a></li>
+      <li class="mobile-nav-item"><a href="./constructing.html">Essays</a></li>
+      <li class="mobile-nav-item"><a href="./constructing.html">About</a></li>
+    </ul>
+  </div>
+
+  <div class='main'>
+    <div class='left'>
+      <div class='icon img-wrapper'>
+        <img src="../src/banner_head.png">
+      </div>
+    </div>
+    <div class='right'>
+      <div class='intro-wrapper'>
+        <p>Wei Liu 刘伟</p>
+        <p><a href="">ISS</a>, <a href="">Wuhan University</a></p>
+        <p>I'm looking forward to further my study.</p>
+        <p>Now, I'm <span class='bold'>READ</span> for <span class='bold'>ADMISSION</span>.</p>
+        <p><a href="mailto:harrybaa@gmail.com">harrybaa@gmail.com</a></p>
+      </div>
+    </div>
+    <div class='clear'></div>
+  </div>
+
+  <script type="text/javascript">
+    $(document).ready(function(){
+      resize();
+    });
+    function resize(){
+      var wheight = document.documentElement.clientHeight;
+      if(wheight > 450){
+        $(".main").css("height", wheight+"px");
+      }
+    }
+    window.onresize = resize;
+
+    //mobile menu
+    $("#mobileMenu").click(function(){
+      changeMobileMenuStatu(isShow);
+    });
+    function changeMobileMenuStatu(flag){
+      if(flag){
+        $(".mobile-menu").animate({top: "-255px"}, 500);
+        isShow = false;
+      } else {
+        $(".mobile-menu").animate({top: "50px"}, 500);
+        isShow = true;
+      }
+    }
+
+    $("#preProNav").click(function(){
+      scrollTo(0, wheight);
+    })
+    </script>
+</body>
+<html>

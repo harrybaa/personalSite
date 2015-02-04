@@ -1,0 +1,27 @@
+body{
+	background-color: #cfd1d8;	
+}
+.main{
+	display: block;
+	width: 960px;
+	height: 100%;
+	margin: 0 auto;
+}
+.left, .right{
+	float: left;
+	width: 50%;
+	height: 100%;
+}
+	.icon{
+		position: relative;
+		top: 50%;
+		left: 100px;
+		width: 400px;
+		height: 400px;
+		margin-top: -200px;
+		border-radius: 50%;
+	}
+
+.right: {
+
+}

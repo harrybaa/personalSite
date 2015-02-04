@@ -1,0 +1,113 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+	<title>Wei Liu--About</title>
+	<link rel="stylesheet" type="text/css" href="css/main.css"/>
+	<link rel="stylesheet" type="text/css" media="screen and (min-width: 980px)" href="css/about_980.css">
+<!-- 	<link rel="stylesheet" type="text/css" media="screen and (max-width: 980px)" href="css/about_780.css"/>
+	<link rel="stylesheet" type="text/css" media="screen and (max-width: 480px)" href="css/about_480.css"/> -->
+	<meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1">
+	<script type="text/javascript" src="js/jquery.js"></script>
+	<script type="text/javascript" src="js/ready.js"></script>
+</head>
+<body>
+	<div class="loading-wrapper">
+		<div class="loading">
+			<span>
+				<img class="load-pic" src="src/load_pic.png"/>
+				<h1 class="load-title">My zealous hear is<br> <span class="firing">FIRING...</span></h1>
+			</span>
+		</div>
+	</div>
+
+	<div class="nav-block">
+		<ul class="top-nav">
+			<li class="nav-index" >
+				<a href="./index.html">
+					<span><img src="./src/load_pic.png"></span>
+					<span id="navIndexTitle">&nbsp;Wei Liu's <br>&nbsp;Dream Home</span>
+				</a>
+			</li>
+			<li class="nav-item"><a id="top-nav2" href="./intern.html">Intern</a></li>
+			<li class="nav-item"><a id="top-nav3">Projects</a></li>
+			<li class="nav-item"><a id="top-nav4">Activities</a></li>
+			<li class="nav-item"><a id="top-nav5">Essays</a></li>
+			<li class="nav-item"><a id="top-nav6">About</a></li>
+		</ul>
+		<div class="top-mobile-menu" id="mobileMenu">
+			<p>MENU</p>
+		</div>
+	</div>
+
+	<div class="mobile-menu">
+		<ul class="mobile-nav">
+			<li class="mobile-nav-item"><a href="./intern.html">Intern</a></li>
+			<li class="mobile-nav-item"><a>Projects</a></li>
+			<li class="mobile-nav-item"><a>Activities</a></li>
+			<li class="mobile-nav-item"><a>Essays</a></li>
+			<li class="mobile-nav-item"><a>About</a></li>
+		</ul>
+	</div>
+
+	<!-- main block -->
+	<div class="wrapper">
+		<div class="main-img-wrapper">
+			<img class="background-img" src="./src/aboutBg.png" alt="about background"/>
+			<img class="background-video" src="./src/aboutVideo.gif"></img>
+		</div>
+	</div>
+
+	<footer class="foot">
+		<div class="left-info">
+			<p>
+				Self-made by Wei Liu.s with enthusiasm & expection.
+			</p>
+			<p>
+				Though compatible with old IE browsers, I recommend a better view in browsers support CCS3 & HTML5.
+			</p>
+		</div>
+		<div class="right-info">
+			<p>
+				Connete me: Facebook & Weibo
+			</p>
+		</div>
+	</footer>
+
+	<script type="text/javascript">
+		var isShow = false,
+			wheight = document.documentElement.clientHeight,
+			wWidth = document.documentElement.clientWidth;
+
+		$(document).ready(function(){
+			resize();
+		});
+		function resize(){
+			if(wheight > 450){
+
+			}
+			if(wWidth > 480 && isShow){
+				changeMobileMenuStatu(isShow);
+			}
+		}
+		window.onresize = resize;
+
+		//mobile menu
+		$("#mobileMenu").click(function(){
+			changeMobileMenuStatu(isShow);
+		});
+		function changeMobileMenuStatu(flag){
+			if(flag){
+				$(".mobile-menu").animate({top: "-255px"}, 500);
+				isShow = false;
+			} else {
+				$(".mobile-menu").animate({top: "50px"}, 500);
+				isShow = true;
+			}
+		}
+
+		$("#preProNav").click(function(){
+			scrollTo(0, wheight);
+		})
+    </script>
+</body>
+<html>

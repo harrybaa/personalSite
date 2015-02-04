@@ -1,0 +1,153 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+	<title>Wei Liu's Home Page</title>
+	<link rel="stylesheet" type="text/css" href="css/main.css"/>
+	<link rel="stylesheet" type="text/css" href="css/index.css">
+	<link rel="stylesheet" type="text/css" media="screen and (max-width: 980px)" href="css/index_980.css"/>
+	<link rel="stylesheet" type="text/css" media="screen and (max-width: 480px)" href="css/index_480.css"/>
+	<meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1">
+	<script type="text/javascript" src="js/jquery.js"></script>
+	<script type="text/javascript" src="js/ready.js"></script>
+</head>
+<body>
+	<div class="loading-wrapper">
+		<div class="loading">
+			<span>
+				<img class="load-pic" src="src/load_pic.png"/>
+				<h1 class="load-title">My zealous hear is<br> <span class="firing">FIRING...</span></h1>
+			</span>
+		</div>
+	</div>
+
+	<div class="nav-block">
+		<ul class="top-nav">
+			<li class="nav-index" >
+				<a href="./index.html">
+					<span><img src="./src/load_pic.png"></span>
+					<span id="navIndexTitle">&nbsp;Wei Liu's <br>&nbsp;Dream Home</span>
+				</a>
+			</li>
+			<li class="nav-item"><a id="top-nav2" href="./constructing.html">Intern</a></li>
+			<li class="nav-item"><a id="top-nav3" href="./constructing.html">Projects</a></li>
+			<li class="nav-item"><a id="top-nav4" href="./constructing.html">Activities</a></li>
+			<li class="nav-item"><a id="top-nav5" href="./constructing.html">Essays</a></li>
+			<li class="nav-item"><a id="top-nav6" href="./constructing.html">About</a></li>
+		</ul>
+		<div class="top-mobile-menu" id="mobileMenu">
+			<p>MENU</p>
+		</div>
+	</div>
+
+	<div class="mobile-menu">
+		<ul class="mobile-nav">
+			<li class="mobile-nav-item"><a href="./constructing.html">Intern</a></li>
+			<li class="mobile-nav-item"><a href="./constructing.html">Projects</a></li>
+			<li class="mobile-nav-item"><a href="./constructing.html">Activities</a></li>
+			<li class="mobile-nav-item"><a href="./constructing.html">Essays</a></li>
+			<li class="mobile-nav-item"><a href="./constructing.html">About</a></li>
+		</ul>
+	</div>
+
+	<div class="wel-pic" id="wel_pic">
+		<div class="welcome-title">
+			<p>
+				TECHNOLOGY<BR>
+				CREATIVITY
+			</p>
+		</div>
+		<img class="banner-head" src="./src/banner_head.png" alt="head">
+	</div>
+
+	<div class="pre-pro-nav">
+		<div class='pre-title'>
+			<p id="preProNav">Project Selection</p>
+		</div>
+		<div class='pre-img'>
+			<img src="./src/bottomArrow.png" alt="more">
+		</div>
+	</div>
+
+	<div class="pro-block">
+		<div class="sample index1">
+			<p class="pro-title">Intern@<br>Dolphin</p>
+			<ul class="pro-sam-list">
+				<li><a>Customer Service System</a></li>
+				<li><a>Crush Analysis Site</a></li>
+				<li><a>Uninstall Query System</a></li>
+				<li><a>International APP Store</a></li>
+				<li><a>More...</a></li>
+			</ul>
+		</div>
+		<div class="sample index2">
+			<img src="src/cool.png">
+			<h1>Cool.list</h1>
+			<h3>2013 practical training</h3>
+		</div>
+		<div class="sample index3">
+			<h3>2014 Inter Imagine Cup</h3>
+			<h1>SPOT LBS System</h1>
+			<span id="spot_logo_block">
+				<img id="spot_logo" src="src/spot_logo.png">
+			</span>
+		</div>
+		<div class="sample index4">
+			<h1 id="choir-title" class="pro-title">Activity@<br>Choir</h1>
+		</div>
+	</div>
+
+	<footer class="foot">
+		<div class="left-info">
+			<p>
+				Self-made by Wei Liu.s with enthusiasm & expection.
+			</p>
+			<p>
+				Though compatible with old IE browsers, I recommend a better view in browsers support CCS3 & HTML5.
+			</p>
+		</div>
+		<div class="right-info">
+			<p>
+				Contact me: <a href="mailto:harrybaa@gmail.com">harrybaa@gmail.com</a>
+			</p>
+		</div>
+	</footer>
+
+	<script type="text/javascript">
+		var isShow = false;
+		var wheight = document.documentElement.clientHeight;
+		var wWidth = document.documentElement.clientWidth;
+
+		$(document).ready(function(){
+			resize();
+		});
+		function resize(){
+			if(wheight > 450){
+				wheight -= 60;
+				$(".wel-pic").css("height", wheight+"px");
+			}
+			if(wWidth > 480 && isShow){
+				changeMobileMenuStatu(isShow);
+			}
+		}
+		window.onresize = resize;
+
+		//mobile menu
+		$("#mobileMenu").click(function(){
+			changeMobileMenuStatu(isShow);
+		});
+		function changeMobileMenuStatu(flag){
+			if(flag){
+				$(".mobile-menu").animate({top: "-255px"}, 500);
+				isShow = false;
+			} else {
+				$(".mobile-menu").animate({top: "50px"}, 500);
+				isShow = true;
+			}
+		}
+
+		$("#preProNav").click(function(){
+			scrollTo(0, wheight);
+		})
+    </script>
+</body>
+<html>
