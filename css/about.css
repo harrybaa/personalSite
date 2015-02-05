@@ -1,27 +1,58 @@
 body{
-	background-color: #cfd1d8;	
+  background-color: #cfd1d8;  
 }
 .main{
-	display: block;
-	width: 960px;
-	height: 100%;
-	margin: 0 auto;
+  display: block;
+  width: 960px;
+  height: 100%;
+  margin: 0 auto;
 }
 .left, .right{
-	float: left;
-	width: 50%;
-	height: 100%;
+  float: left;
+  width: 50%;
+  height: 100%;
 }
-	.icon{
-		position: relative;
-		top: 50%;
-		left: 100px;
-		width: 400px;
-		height: 400px;
-		margin-top: -200px;
-		border-radius: 50%;
-	}
+  .left .icon{
+    position: relative;
+    top: 50%;
+    left: 100px;
+    width: 220px;
+    height: 220px;
+    margin-top: -120px;
+    overflow: hidden;
+    border: 26px solid #AEAEAE;
+    border-radius: 50%;
+    background-color: #dedede;
+    background-image: url('../src/banner_head.png');
+    background-size: cover;
+  }
 
-.right: {
-
-}
+  .right .wrapper{
+    position: relative;
+    box-sizing: border-box;
+    padding: 22px 28px;
+    width: 416px;
+    height: 244px;
+    top: 50%;
+    margin-top: -102px;
+    border: 1px solid #AEAEAE;
+    background: #EAEAEA;
+  }
+  .right .wrapper p, .right .wrapper a{
+    font-size: 22px;
+    line-height: 32px;
+    color: #232323;
+  }
+  .right .wrapper a{
+    display: inline-block;
+    transition: all 0.5s;
+    -moz-transition: all 0.5s;
+    -webkit-transition: all 0.5s;
+    -o-transition: all 0.5s;
+  }
+  .right .wrapper a:hover{
+    color: blue;
+  }
+    .right .wrapper .stress{
+      color: rgb(255, 108, 108);
+    }
