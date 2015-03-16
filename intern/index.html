@@ -312,16 +312,17 @@ $(document).ready(function(){
 
 function init(){
   var data,
-      url = './data/inter.json';
+      url = './data/intern.json';
   loadData(url);
 }
 
 function loadData(url){
   $.ajax({
     url: url,
-    type: 'json',
-    success: function(text){
-      renderData(text);
+    dataType: 'json',
+    success: function(res){
+      console.log('New Json data loaded.');
+      renderData(res);
     },
     error: function(){
       console.log('Faild to load the data.');
@@ -329,10 +330,10 @@ function loadData(url){
   });
 }
 
-function renderData(text){
+function renderData(res){
   var fragment,
-      data = text;
-  cosole.log(data);
+      data = res;
+  console.log(data);
 }
 
 function registEven () {
