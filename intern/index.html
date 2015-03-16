@@ -7,6 +7,7 @@
   <!-- <link rel="stylesheet" type="text/css" media="screen and (min-width: 980px)" href="./css/intern_980.css"> -->
   <script type="text/javascript" src="../js/jquery.js"></script>
   <script type="text/javascript" src="../js/ready.js"></script>
+  <script type="text/javascript" src="../js/template.js"></script>
 </head>
 <body>
   <!-- loading -->
@@ -58,24 +59,12 @@
             <img src="../src/intern_index0_content.png">
           </a>
           <div class="info-block">
-            <p class="info-block-p">
-              Position: Web FrontEnd Developer<br>
-              Team: INT Browser Team<br>
-              Time: Jul,2014 ~ Now (Jan,2015)<br>
-              Keywords: Contentious, Progress, hungery.<br>
-            </p>
             <img class="read-more" src="../src/readMore.png"/>
           </div>
         </div>
         <div class="clear-float"></div>
         
         <div class="more-info">
-          <p>
-            Position: Web FrontEnd Developer<br>
-            Team: INT Browser Team<br>
-            Time: Jul,2014 ~ Now (Jan,2015)<br>
-            Keywords: Contentious, Progress, hungery.
-          </p>
           <img class="read-less" src="../src/readLess.png"/>
         </div>
       </div>
@@ -304,6 +293,55 @@
     </div>
   </footer>
 
+  <script id="temp_info" type="text/html">
+    <p class="info-block-p">
+      {{each data as value i}}
+        {{value}} <br>
+      {{/each}}
+    </p>
+  </script>
+
+  <script id="temp_work_i" type="text/html">
+    <div class='links left'>
+      <div class='work-name shadow'>{{work_name}}</div>
+      <div class='preview img-ver-wrapper'>
+        <img class='shadow' src="{{icon_url}}">
+      </div>
+      <a class='site-link' target='_blank' href="{{site_link_url}}">{{site_link_name}}</a>
+      <div class='basic-info bold'>
+        <p class='b-i-item'><span class='item-name'>Date: </span>{{Date}}</p>
+        <p class='b-i-item'><span class='item-name'>Platform: </span>{{Plantform}}</p>
+        <p class='b-i-item'><span class='item-name'>Languages: </span>{{Languages}}</p>
+      </div>
+    </div>
+
+    <div class='contents left'>
+      <!--Features-->
+    //   <div class='introduction'>
+    //     <p class='intro-item'>{{introduction}}</p>
+    //   </div>
+    //   <div class='features-wrapper'>
+    //     {{each features as feature i}}
+    //     <div class='feature'>
+    //       <div class='feature-icon img-wrapper shadow'>
+    //         <img src="{{feature.icon_url}}">
+    //       </div>
+    //       <p class='item-name bold'>{{feature_name}}</p>
+    //       <p class='feature-content'>{{feature_content}}</p>
+    //     </div>
+    //     {{/each}}
+    //     <div class='clear'></div>
+    //   </div>
+    //   <!--role-->
+    //   <div class='role'>
+    //     <p class='role-title'>Role In Team</p>
+    //     {{each roles as role i}}
+    //     <p class='role-item'><span class='item-name bold'>{{role.name}}:</span> {{role.content}}</p>
+    //   </div>
+    // </div>
+    // <div class='clear'></div>
+  </script>
+
 <script type="text/javascript">
 $(document).ready(function(){
   init();
@@ -331,9 +369,28 @@ function loadData(url){
 }
 
 function renderData(res){
-  var fragment,
-      data = res;
-  console.log(data);
+  var info = res.info || [],
+      works = res.works,
+      others = res.others;
+  renderInfo(info);
+  if(works) renderWorks(works);
+  if(works) renderOthers(others);
+}
+function renderInfo(data){
+  var html = template('temp_info', data);
+  $('.info-block').html(html + $('.info-block').html());
+  $('.more-info').html(html + $('.more-info').html());
+}
+function renderWorks(data){
+  var html,
+      len = data.length;
+  for(var i = 0;i < len;i++){
+    html += template('temp_work_i', data[i]);
+  }
+  console.log("done.");
+}
+function renderOthers(data){
+
 }
 
 function registEven () {

@@ -1,10 +1,12 @@
 {
-  "info" : [
-    "Position: Web FrontEnd Developer",
-    "Team: INT Browser Team",
-    "Time: Jul,2014 ~ Now (Jan,2015)",
-    "Keywords: Contentious, Progress, hungery."
-  ],
+  "info" : {
+    "data": [
+      "Position: Web FrontEnd Developer",
+      "Team: INT Browser Team",
+      "Time: Jul,2014 ~ Now (Jan,2015)",
+      "Keywords: Contentious, Progress, hungery."
+    ]
+  },
   "works": [
     {
       "work_name": "Customer Service",
