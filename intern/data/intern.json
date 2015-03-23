@@ -171,7 +171,8 @@
     }
     
   ],
-  "others": [
+  "others": {
+    "data": [
     {
       "name": "Official Site [int]",
       "pic": "#",
@@ -190,5 +191,6 @@
       "link_name": "http://www.dolphin-browser.com",
       "link_url": "dolphin-browser.com"
     }
-  ]
+    ]
+  }
 }
