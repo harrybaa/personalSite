@@ -1,0 +1,27 @@
+.wrapper{
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	width: 100%;
+	overflow: hidden;
+}
+	.wrapper .main-img-wrapper .background-img{
+		position: absolute;
+		bottom: 0;
+		width: 100%;
+	}
+	.wrapper .main-img-wrapper .background-video{
+		position: absolute;
+		bottom: 0;
+		left: 0;
+		z-index: -10;
+		width: 60%;
+		height: 100%;
+	}
+
+
+.foot{
+	position: absolute;
+	display: none;
+	bottom: -80px;
+}

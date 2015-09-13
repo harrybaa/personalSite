@@ -1,0 +1,136 @@
+@font-face{
+	font-family: MyriadSetPro-Thin;
+	src: url("../font/MyriadSetPro-Thin.ttf");
+}
+@font-face{
+	font-family: MyriadSetPro-Semibold;
+	src: url("../font/MyriadSetPro-Semibold.ttf");
+}
+.wel-pic{
+	position: relative;
+	width: 100%;
+	height: 100%;
+	overflow: hidden;
+	max-width: 1920px;
+	margin: 0;
+	background-color: #cfd1d8;
+}
+	.welcome-title{
+		position: absolute;
+		top: 50%;
+		left: 40%;
+		margin-left: -298px;
+		margin-top: -57px;
+		font-size: 52px;
+		font-family: MyriadSetPro-Semibold;
+		color: #2a2a2c;
+	}
+	.banner-head{
+		position: absolute;
+		left: 40%;
+		bottom: 0;
+		width: 45%;
+	}
+
+.pre-pro-nav{
+	width: 100%;
+	height: 60px;
+	max-width: 1920px;
+	margin: 0 auto;
+	text-align: center;
+	line-height: 60px;
+	font-size: 30px;
+	color: #2a2a2c;
+	background: #fff;
+}
+	.pre-pro-nav div{
+		display: inline-block;
+		cursor: pointer;
+	}
+	.pre-img{
+		margin-top: 10px;
+		vertical-align: sub;
+	}
+
+.pro-block{
+	position: relative;
+	display: block;
+	width: 100%;
+	height: 330px;
+	max-width: 1920px;
+	margin:0 auto;
+	text-shadow: 0px 0px 1px #aaa;
+}
+	.pro-block .sample{
+	display: block;
+	overflow: hidden;
+	float: left;
+	width: 25%;
+	height: 100%;
+	transition: all 0.5s;
+	-moz-transition: all 0.5s;
+	-webkit-transition: all 0.5s;
+	-o-transition: all 0.5s;
+}
+	.pro-block .index1{
+		background-image: url("../src/subBg1.png");
+		background-position: center bottom;
+		-webkit-background-size: cover;
+		background-size: cover;
+	}
+		.pro-block .index1 .pro-title{
+			float: right;
+			margin: 20px 28px 0 0;
+			font-size: 42px;
+			color: #fff;
+		}
+			.pro-block .index1 .pro-title:first-line{
+				text-decoration: underline;
+			}
+		.pro-block .index1 ul{
+			position: relative;
+			float: right;
+			margin: 0 28px 0 0;
+			font-size: 20px;
+			line-height: 38px;
+			text-decoration: underline;
+		}
+		.pro-block .index1 a{
+			color: #fff;
+		}
+	.pro-block .index2{
+		text-align: center;
+		background-image: url("../src/subBg2.png");
+		background-position: center bottom;
+		-webkit-background-size: cover;
+		background-size: cover;
+	}
+		.pro-block .index2 img{
+			position: relative;
+			margin: 20px 0 10px 0px;
+		}
+		.pro-block .index2 h1, .pro-block .index2 h3{
+			position: relative;
+			margin: 10px;
+			color: #ccc;
+		}
+	.pro-block .index3{
+		text-align: center;
+		color: #ccc;
+		background-image: url("../src/subBg3.png");
+		background-position: center bottom;
+		-webkit-background-size: cover;
+		background-size: cover;
+	}
+	.pro-block .index4{
+		margin-right: 0;
+		background-image: url("../src/subBg4.png");
+		background-position: center bottom;
+		-webkit-background-size: cover;
+		background-size: cover;
+		outline: 5px #000;
+	}
+	.pro-block .index4 .pro-title{
+		margin-left: 30px;
+	}
+

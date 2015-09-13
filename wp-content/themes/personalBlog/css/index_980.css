@@ -1,0 +1,18 @@
+.top-nav .nav-index{
+	width: 50px;
+	border: none;
+}
+.top-nav #navIndexTitle{
+	display: none;
+}
+.top-nav li{
+	width: 80px;
+	font-size: 14px;
+}
+
+.pro-block .index1, .pro-block .index3{
+	width: 50%;
+}
+.pro-block .index2, .pro-block .index4{
+	width: 49%;
+}
