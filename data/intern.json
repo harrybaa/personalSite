@@ -1,0 +1,192 @@
+{
+  "info" : [
+    "Position: Web FrontEnd Developer",
+    "Team: INT Browser Team",
+    "Time: Jul,2014 ~ Now (Jan,2015)",
+    "Keywords: Contentious, Progress, hungery."
+  ],
+  "works": [
+    {
+      "work_name": "Customer Service",
+      "icon_url": "#",
+      "site_link_name": "sp.dolphin.com",
+      "site_link_url": "http://sp.dolphin.com",
+      "Date": "July, 2014 ~ August, 2014",
+      "Plantform": "mobile web browser" ,
+      "Languages": "HTML, JavaScript, jQuery, CSS",
+      "introduction": "This website is embedded inside Dolphin Browser which meaning to solve the common questions users may meet, and support a platform where users could feedback their experience. Seeking for a friendly interaction, we designed the website as an online chat system. The data of questions and answers and stored in database. We use Google Analytics to help managing the feedback data and find the points needed to be improved.",
+      "features": [
+        {
+          "feature_name": "Module Development",
+          "icon_url": "#",
+          "feature_content": "Used existing modules in company and built new function modules using module technique of JavaScript."         
+        },
+        {
+          "feature_name": "Enchantted to Me",
+          "icon_url": "#",
+          "feature_content": "This is your first love story."         
+        },
+        {
+          "feature_name": "I18N",
+          "icon_url": "#",
+          "feature_content": "Used i18n (internationalization) module to generate different country versions with one code (Only English version in Dec. 2014): build website using one project, dynamically identify users' language and replace the site's language and list the specific question pool."         
+        }
+      ],
+      "roles": [
+        {
+          "name": "Requirement Analysis",
+          "content": "Analyzed the function requirements and checked the details of interactions with PM (product manager), made advices about how to improve the use experience and ways to parry the limits of technic. Unite the forms of data communicating APIs with Server Team. Drafted the test criteria with the Test Team."
+        },
+        {
+          "name": "Frame Building",
+          "content": "Co-built the main code frame of the system with my partner according to the function modules, requirement of i18n, and function logics."
+        },
+        {
+          "name": "Interface Rendering",
+          "content": "Built the main scrollable page of website, the templates for each type of messages, and the expression style, which is mostly about HTML and CSS. Using the briefest architecture of HTML doms and the most fast-rendering CSS sequence to build the fundamental footstones of the system."
+        },
+        {
+          "name": "Interaction Function APIs",
+          "content": "Built partial JavaScript function APIs according to the requirements of interactions. Bound the click and automatic triggered events to the HTML doms."
+        },
+        {
+          "name": "Browsers Compatibility Adapting",
+          "content": "Although this site is only accessible inside Dolphin Browser, the different render logics according to different browser cores may led different representations. Especially, some features of representation are only supported by HTML5 and CSS3. Our team has tested and made adaptions, including parrying some troublesome HTML5 features and adjusting some representations, for most browser cores of mobile web browsers."
+        },
+        {
+          "name": "Google Analytics",
+          "content": "Used GA (Google Analytics) system to track user actions. Managed users' feedback and optimized the website."
+        }
+      ]
+    },
+    
+    {
+      "work_name": "Site Navigation",
+      "icon_url": "#",
+      "site_link_name": "sp.dolphin.com",
+      "site_link_url": "http://sp.dolphin.com",
+      "Date": "July, 2014 ~ August, 2014",
+      "Plantform": "mobile web browser" ,
+      "Languages": "HTML, JavaScript, jQuery, CSS",
+      "introduction": "This website is embedded inside Dolphin Browser which meaning to solve the common questions users may meet, and support a platform where users could feedback their experience. Seeking for a friendly interaction, we designed the website as an online chat system. The data of questions and answers and stored in database. We use Google Analytics to help managing the feedback data and find the points needed to be improved.",
+      "features": [
+        {
+          "feature_name": "Module Development",
+          "icon_url": "#",
+          "feature_content": "Used existing modules in company and built new function modules using module technique of JavaScript."         
+        },
+        {
+          "feature_name": "Enchantted to Me",
+          "icon_url": "#",
+          "feature_content": "This is your first love story."         
+        },
+        {
+          "feature_name": "I18N",
+          "icon_url": "#",
+          "feature_content": "Used i18n (internationalization) module to generate different country versions with one code (Only English version in Dec. 2014): build website using one project, dynamically identify users' language and replace the site's language and list the specific question pool."         
+        }
+      ],
+      "roles": [
+        {
+          "name": "Requirement Analysis",
+          "content": "Analyzed the function requirements and checked the details of interactions with PM (product manager), made advices about how to improve the use experience and ways to parry the limits of technic. Unite the forms of data communicating APIs with Server Team. Drafted the test criteria with the Test Team."
+        },
+        {
+          "name": "Frame Building",
+          "content": "Co-built the main code frame of the system with my partner according to the function modules, requirement of i18n, and function logics."
+        },
+        {
+          "name": "Interface Rendering",
+          "content": "Built the main scrollable page of website, the templates for each type of messages, and the expression style, which is mostly about HTML and CSS. Using the briefest architecture of HTML doms and the most fast-rendering CSS sequence to build the fundamental footstones of the system."
+        },
+        {
+          "name": "Interaction Function APIs",
+          "content": "Built partial JavaScript function APIs according to the requirements of interactions. Bound the click and automatic triggered events to the HTML doms."
+        },
+        {
+          "name": "Browsers Compatibility Adapting",
+          "content": "Although this site is only accessible inside Dolphin Browser, the different render logics according to different browser cores may led different representations. Especially, some features of representation are only supported by HTML5 and CSS3. Our team has tested and made adaptions, including parrying some troublesome HTML5 features and adjusting some representations, for most browser cores of mobile web browsers."
+        },
+        {
+          "name": "Google Analytics",
+          "content": "Used GA (Google Analytics) system to track user actions. Managed users' feedback and optimized the website."
+        }
+      ]
+    },
+    
+    {
+      "work_name": "Customer Service",
+      "icon_url": "#",
+      "site_link_name": "sp.dolphin.com",
+      "site_link_url": "http://sp.dolphin.com",
+      "Date": "July, 2014 ~ August, 2014",
+      "Plantform": "mobile web browser" ,
+      "Languages": "HTML, JavaScript, jQuery, CSS",
+      "introduction": "This website is embedded inside Dolphin Browser which meaning to solve the common questions users may meet, and support a platform where users could feedback their experience. Seeking for a friendly interaction, we designed the website as an online chat system. The data of questions and answers and stored in database. We use Google Analytics to help managing the feedback data and find the points needed to be improved.",
+      "features": [
+        {
+          "feature_name": "Module Development",
+          "icon_url": "#",
+          "feature_content": "Used existing modules in company and built new function modules using module technique of JavaScript."         
+        },
+        {
+          "feature_name": "Enchantted to Me",
+          "icon_url": "#",
+          "feature_content": "This is your first love story."         
+        },
+        {
+          "feature_name": "I18N",
+          "icon_url": "#",
+          "feature_content": "Used i18n (internationalization) module to generate different country versions with one code (Only English version in Dec. 2014): build website using one project, dynamically identify users' language and replace the site's language and list the specific question pool."         
+        }
+      ],
+      "roles": [
+        {
+          "name": "Requirement Analysis",
+          "content": "Analyzed the function requirements and checked the details of interactions with PM (product manager), made advices about how to improve the use experience and ways to parry the limits of technic. Unite the forms of data communicating APIs with Server Team. Drafted the test criteria with the Test Team."
+        },
+        {
+          "name": "Frame Building",
+          "content": "Co-built the main code frame of the system with my partner according to the function modules, requirement of i18n, and function logics."
+        },
+        {
+          "name": "Interface Rendering",
+          "content": "Built the main scrollable page of website, the templates for each type of messages, and the expression style, which is mostly about HTML and CSS. Using the briefest architecture of HTML doms and the most fast-rendering CSS sequence to build the fundamental footstones of the system."
+        },
+        {
+          "name": "Interaction Function APIs",
+          "content": "Built partial JavaScript function APIs according to the requirements of interactions. Bound the click and automatic triggered events to the HTML doms."
+        },
+        {
+          "name": "Browsers Compatibility Adapting",
+          "content": "Although this site is only accessible inside Dolphin Browser, the different render logics according to different browser cores may led different representations. Especially, some features of representation are only supported by HTML5 and CSS3. Our team has tested and made adaptions, including parrying some troublesome HTML5 features and adjusting some representations, for most browser cores of mobile web browsers."
+        },
+        {
+          "name": "Google Analytics",
+          "content": "Used GA (Google Analytics) system to track user actions. Managed users' feedback and optimized the website."
+        }
+      ]
+    }
+    
+  ],
+  "others": [
+    {
+      "name": "Official Site [int]",
+      "pic": "#",
+      "link_name": "http://www.dolphin-browser.com",
+      "link_url": "dolphin-browser.com"
+    },
+    {
+      "name": "Official Site [int]",
+      "pic": "#",
+      "link_name": "http://www.dolphin-browser.com",
+      "link_url": "dolphin-browser.com"
+    },
+    {
+      "name": "Official Site [int]",
+      "pic": "#",
+      "link_name": "http://www.dolphin-browser.com",
+      "link_url": "dolphin-browser.com"
+    }
+  ]
+}

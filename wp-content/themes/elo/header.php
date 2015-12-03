@@ -15,6 +15,7 @@
 <link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>">
 
 <!--<?php wp_head(); ?>-->
+  <link rel="stylesheet" type="text/css" href="<?php bloginfo( 'template_directory' ); ?>/style.css"/>
 
 <!-- costomed style -->
 
@@ -22,9 +23,9 @@
   <link rel="stylesheet" type="text/css" href="<?php bloginfo( 'template_directory' ); ?>/css/index.css">
 
   <!-- don't addapt to phone right now
-  <link rel="stylesheet" type="text/css" media="screen and (max-width: 980px)" href="css/index_980.css"/>
-  <link rel="stylesheet" type="text/css" media="screen and (max-width: 480px)" href="css/index_480.css"/>
   -->
+  <link rel="stylesheet" type="text/css" media="screen and (max-width: 980px)" href="<?php bloginfo( 'template_directory' ); ?>/css/index_980.css"/>
+  <link rel="stylesheet" type="text/css" media="screen and (max-width: 480px)" href="<?php bloginfo( 'template_directory' ); ?>/css/index_480.css"/>
   <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1">
   <script type="text/javascript" src="<?php bloginfo( 'template_directory' ); ?>/js/jquery.js"></script>
   <script type="text/javascript" src="<?php bloginfo( 'template_directory' ); ?>/js/ready.js"></script>
@@ -75,7 +76,7 @@
     <li class="nav-item"><a href="./constructing.html">Intern</a></li>
     <li class="nav-item"><a href="./constructing.html">Projects</a></li>
     <li class="nav-item"><a href="./constructing.html">Activities</a></li>
-    <li class="nav-item"><a href="./constructing.html">Essays</a></li>
+    <!-- <li class="nav-item"><a href="./constructing.html">Essays</a></li> -->
     <li class="nav-item"><a href="./constructing.html">Blog</a></li>
     <li class="nav-item"><a href="./constructing.html">About</a></li>
   </ul>

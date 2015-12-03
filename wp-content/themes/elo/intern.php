@@ -1,55 +1,10 @@
-<!DOCTYPE HTML>
-<html>
-<head>
-  <title>Intern--Wei Liu</title>
-  <link rel="stylesheet" type="text/css" href="../css/main.css">
-  <link rel="stylesheet" type="text/css" href="../css/intern.css">
-  <!-- <link rel="stylesheet" type="text/css" media="screen and (min-width: 980px)" href="./css/intern_980.css"> -->
-  <script type="text/javascript" src="../js/jquery.js"></script>
-  <script type="text/javascript" src="../js/ready.js"></script>
-</head>
-<body>
-  <!-- loading -->
-  <div class="loading-wrapper" style="display:none;">
-    <div class="loading">
-      <span>
-        <img class="load-pic" src="../src/load_pic.png"/>
-        <h1 class="load-title">My zealous hear is<br> <span class="firing">FIRING...</span></h1>
-      </span>
-    </div>
-  </div>
-  
-  <!--Navigation-->
-  <div class="nav-block">
-    <ul class="top-nav">
-      <li class="nav-index" >
-        <a href="../index.html">
-          <span><img src="../src/load_pic.png"></span>
-          <span id="navIndexTitle">Wei Liu's <br>Dream Home</span>
-        </a>
-      </li>
-      <li class="nav-item"><a id="top-nav2" href="../intern/intern.html">Intern</a></li>
-      <li class="nav-item"><a id="top-nav3">Projects</a></li>
-      <li class="nav-item"><a id="top-nav4">Activities</a></li>
-      <li class="nav-item"><a id="top-nav5">Essays</a></li>
-      <li class="nav-item"><a id="top-nav6">About</a></li>
-    </ul>
-    <div class="top-mobile-menu" id="mobileMenu">
-      <p>MENU</p>
-    </div>
-  </div>
+<?php
+/*
+Template Name: constructing
+*/
 
-  <div class="mobile-menu">
-    <ul class="mobile-nav">
-      <li class="mobile-nav-item"><a href="./intern.html">Intern</a></li>
-      <li class="mobile-nav-item"><a>Projects</a></li>
-      <li class="mobile-nav-item"><a>Activities</a></li>
-      <li class="mobile-nav-item"><a>Essays</a></li>
-      <li class="mobile-nav-item"><a>About</a></li>
-    </ul>
-  </div>
+get_header(); ?>
 
-  <!--main block-->
   <div class='main'>
     <div class='banner'>
       <div class="content">
@@ -258,6 +213,7 @@
       </div>
 
     </div>
+
     <div class='others'>
       <div class='other-title'><p>Add More...</p></div>
       <div class='other-item'>
@@ -288,69 +244,52 @@
     </div>
   </div>
 
-  <footer class="foot">
-    <div class="left-info">
-      <p>
-        Self-made by Wei Liu.s with enthusiasm & expection.
-      </p>
-      <p>
-        Though compatible with old IE browsers, I recommend a better view in browsers support CCS3 & HTML5.
-      </p>
-    </div>
-    <div class="right-info">
-      <p>
-        Contact me: <a href="mailto:harrybaa@gmail.com">harrybaa@gmail.com</a>
-      </p>
-    </div>
-  </footer>
+  <script type="text/javascript">
+    $(document).ready(function(){
+      init();
+      registEven();
+    });
 
-<script type="text/javascript">
-$(document).ready(function(){
-  init();
-  registEven();
-});
-
-function init(){
-  var data,
-      url = './data/intern.json';
-  loadData(url);
-}
-
-function loadData(url){
-  $.ajax({
-    url: url,
-    dataType: 'json',
-    success: function(res){
-      console.log('New Json data loaded.');
-      renderData(res);
-    },
-    error: function(){
-      console.log('Faild to load the data.');
+    function init(){
+      var data,
+          url = 'http://harrybaa.com/data/intern.json';
+      loadData(url);
     }
-  });
-}
 
-function renderData(res){
-  var fragment,
-      data = res;
-  console.log(data);
-}
+    function loadData(url){
+      $.ajax({
+        url: url,
+        dataType: 'json',
+        success: function(res){
+          console.log('New Json data loaded.');
+          renderData(res);
+        },
+        error: function(){
+          console.log('Faild to load the data.');
+        }
+      });
+    }
 
-function registEven () {
-  $(".banner .read-more").click(function(){
-    $(".simple-info").animate({opacity: 0}, 500, function(){
-      $(".simple-info").css("display", "none");
-      $(".more-info").css("display", "block").animate({opacity: 1}, 500);
-    });
-  });
-  $(".banner .read-less").click(function(){
-    $(".more-info").animate({opacity: 0}, 500, function(){
-      $(".more-info").css("display", "none")
-      $(".simple-info").css("display", "block").animate({opacity: 1}, 500);
-    });
-  });
-}
+    function renderData(res){
+      var fragment,
+          data = res;
+      console.log(data);
+    }
 
+    function registEven () {
+      $(".banner .read-more").click(function(){
+        $(".simple-info").animate({opacity: 0}, 500, function(){
+          $(".simple-info").css("display", "none");
+          $(".more-info").css("display", "block").animate({opacity: 1}, 500);
+        });
+      });
+      $(".banner .read-less").click(function(){
+        $(".more-info").animate({opacity: 0}, 500, function(){
+          $(".more-info").css("display", "none")
+          $(".simple-info").css("display", "block").animate({opacity: 1}, 500);
+        });
+      });
+    }
 </script>
-</body>
-</html>
+
+<?php get_footer(); ?>
