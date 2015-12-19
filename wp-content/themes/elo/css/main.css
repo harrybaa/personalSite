@@ -13,7 +13,6 @@ body, ul, li, p{
   font-family: "MyriadSetPro-Thin", 'Lucida Grande', 'Lucida Sans Unicode', Helvetica, Arial, Verdana, sans-serif;
 }
 a{
-  display: block;
   text-decoration: none;
   color: #ccc;
 }

@@ -9,23 +9,39 @@
 	var $body, $window, $sidebar, adminbarOffset, top = false,
 	    bottom = false, windowWidth, windowHeight, lastWindowPos = 0,
 	    topOffset = 0, bodyHeight, sidebarHeight, resizeTimer,
-		secondary, button;
+	    secondary, button;
 
-	// Add dropdown toggle that display child menu items.
-	$( '.main-navigation .menu-item-has-children > a' ).after( '<button class="dropdown-toggle" aria-expanded="false">' + screenReaderText.expand + '</button>' );
+	function initMainNavigation( container ) {
+		// Add dropdown toggle that display child menu items.
+		container.find( '.menu-item-has-children > a' ).after( '<button class="dropdown-toggle" aria-expanded="false">' + screenReaderText.expand + '</button>' );
 
-	// Toggle buttons and submenu items with active children menu items.
-	$( '.main-navigation .current-menu-ancestor > button' ).addClass( 'toggle-on' );
-	$( '.main-navigation .current-menu-ancestor > .sub-menu' ).addClass( 'toggled-on' );
+		// Toggle buttons and submenu items with active children menu items.
+		container.find( '.current-menu-ancestor > button' ).addClass( 'toggle-on' );
+		container.find( '.current-menu-ancestor > .sub-menu' ).addClass( 'toggled-on' );
 
-	$( '.dropdown-toggle' ).click( function( e ) {
-		var _this = $( this );
-		e.preventDefault();
-		_this.toggleClass( 'toggle-on' );
-		_this.next( '.children, .sub-menu' ).toggleClass( 'toggled-on' );
-		_this.attr( 'aria-expanded', _this.attr( 'aria-expanded' ) === 'false' ? 'true' : 'false' );
-		_this.html( _this.html() === screenReaderText.expand ? screenReaderText.collapse : screenReaderText.expand );
-	} );
+		container.find( '.dropdown-toggle' ).click( function( e ) {
+			var _this = $( this );
+			e.preventDefault();
+			_this.toggleClass( 'toggle-on' );
+			_this.next( '.children, .sub-menu' ).toggleClass( 'toggled-on' );
+			_this.attr( 'aria-expanded', _this.attr( 'aria-expanded' ) === 'false' ? 'true' : 'false' );
+			_this.html( _this.html() === screenReaderText.expand ? screenReaderText.collapse : screenReaderText.expand );
+		} );
+	}
+	initMainNavigation( $( '.main-navigation' ) );
+
+	// Re-initialize the main navigation when it is updated, persisting any existing submenu expanded states.
+	$( document ).on( 'customize-preview-menu-refreshed', function( e, params ) {
+		if ( 'primary' === params.wpNavMenuArgs.theme_location ) {
+			initMainNavigation( params.newContainer );
+
+			// Re-sync expanded states from oldContainer.
+			params.oldContainer.find( '.dropdown-toggle.toggle-on' ).each(function() {
+				var containerId = $( this ).parent().prop( 'id' );
+				$( params.newContainer ).find( '#' + containerId + ' > .dropdown-toggle' ).triggerHandler( 'click' );
+			});
+		}
+	});
 
 	secondary = $( '#secondary' );
 	button = $( '.site-branding' ).find( '.secondary-toggle' );
@@ -60,7 +76,12 @@
 		} );
 	} )();
 
-	// Add or remove ARIA attributes.
+	/**
+	 * @summary Add or remove ARIA attributes.
+	 * Uses jQuery's width() function to determine the size of the window and add
+	 * the default ARIA attributes for the menu toggle if it's visible.
+	 * @since Twenty Fifteen 1.1
+	 */
 	function onResizeARIA() {
 		if ( 955 > $window.width() ) {
 			button.attr( 'aria-expanded', 'false' );
@@ -75,10 +96,7 @@
 
 	// Sidebar scrolling.
 	function resize() {
-		windowWidth   = $window.width();
-		windowHeight  = $window.height();
-		bodyHeight    = $body.height();
-		sidebarHeight = $sidebar.height();
+		windowWidth = $window.width();
 
 		if ( 955 > windowWidth ) {
 			top = bottom = false;
@@ -92,6 +110,10 @@
 		if ( 955 > windowWidth ) {
 			return;
 		}
+
+		sidebarHeight = $sidebar.height();
+		windowHeight  = $window.height();
+		bodyHeight    = $body.height();
 
 		if ( sidebarHeight + adminbarOffset > windowHeight ) {
 			if ( windowPos > lastWindowPos ) {

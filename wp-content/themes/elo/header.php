@@ -22,11 +22,11 @@
   <link rel="stylesheet" type="text/css" href="<?php bloginfo( 'template_directory' ); ?>/css/main.css"/>
   <link rel="stylesheet" type="text/css" href="<?php bloginfo( 'template_directory' ); ?>/css/index.css">
 
-  <!-- don't addapt to phone right now
-  -->
+  <!-- Isn't addapted to phone right now
   <link rel="stylesheet" type="text/css" media="screen and (max-width: 980px)" href="<?php bloginfo( 'template_directory' ); ?>/css/index_980.css"/>
   <link rel="stylesheet" type="text/css" media="screen and (max-width: 480px)" href="<?php bloginfo( 'template_directory' ); ?>/css/index_480.css"/>
   <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1">
+  -->
   <script type="text/javascript" src="<?php bloginfo( 'template_directory' ); ?>/js/jquery.js"></script>
   <script type="text/javascript" src="<?php bloginfo( 'template_directory' ); ?>/js/ready.js"></script>
 
@@ -70,7 +70,7 @@
     <li class="nav-index" >
       <a href="./index.html">
         <span><img src="<?php bloginfo( 'template_directory' ); ?>/src/load_pic.png"></span>
-        <span id="navIndexTitle">&nbsp;Wei Liu's <br>&nbsp;Dream Home</span>
+        <span id="navIndexTitle">&nbsp;Harry's <br>&nbsp;Dream Home</span>
       </a>
     </li>
     <li class="nav-item"><a href="./constructing.html">Intern</a></li>

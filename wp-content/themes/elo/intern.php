@@ -1,10 +1,11 @@
 <?php
 /*
-Template Name: constructing
+Template Name: intern
 */
 
 get_header(); ?>
-
+  <link rel="stylesheet" type="text/css" href="<?php bloginfo( 'template_directory' ); ?>/css/intern.css">
+  <script type="text/javascript" src="<?php bloginfo( 'template_directory' ); ?>/js/template.js"></script>
   <div class='main'>
     <div class='banner'>
       <div class="content">
@@ -13,24 +14,14 @@ get_header(); ?>
             <img src="../src/intern_index0_content.png">
           </a>
           <div class="info-block">
-            <p class="info-block-p">
-              Position: Web FrontEnd Developer<br>
-              Team: INT Browser Team<br>
-              Time: Jul,2014 ~ Now (Jan,2015)<br>
-              Keywords: Contentious, Progress, hungery.<br>
-            </p>
+            <p class="info-block-p"></p>
             <img class="read-more" src="../src/readMore.png"/>
           </div>
         </div>
         <div class="clear-float"></div>
         
         <div class="more-info">
-          <p>
-            Position: Web FrontEnd Developer<br>
-            Team: INT Browser Team<br>
-            Time: Jul,2014 ~ Now (Jan,2015)<br>
-            Keywords: Contentious, Progress, hungery.
-          </p>
+          <p class="big-info-block-p"></p>
           <img class="read-less" src="../src/readLess.png"/>
         </div>
       </div>
@@ -40,209 +31,77 @@ get_header(); ?>
       </div>
     </div>
 
-    <div class='works'>
-      <div class='work-item'>
-        <div class='links left'>
-          <div class='work-name shadow'>Customer Service</div>
-          <div class='preview img-ver-wrapper'>
-            <img class='shadow' src="../src/intern_customerService.png">
-          </div>
-          <a class='site-link' target='_blank' href="http://sp.dolphin.com">sp.dolphin.com</a>
-          <div class='basic-info bold'>
-            <p class='b-i-item'><span class='item-name'>Date: </span>July, 2014 ~ August, 2014</p>
-            <p class='b-i-item'><span class='item-name'>Platform: </span>mobile web browser</p>
-            <p class='b-i-item'><span class='item-name'>Languages: </span>HTML, JavaScript, jQuery, CSS</p>
-          </div>
-        </div>
+    <div class='works'></div>
 
-        <div class='contents left'>
-          <!--Features-->
-          <div class='introduction'>
-            <p class='intro-item'>This website is embedded inside Dolphin Browser which meaning to solve the common questions users may meet, and support a platform where users could feedback their experience. Seeking for a friendly interaction, we designed the website as an online chat system. The data of questions and answers and stored in database. We use Google Analytics to help managing the feedback data and find the points needed to be improved.</p>
-          </div>
-          <div class='features-wrapper'>
-            <div class='feature'>
-              <div class='feature-icon img-wrapper shadow'>
-                <img src="">
-              </div>
-              <p class='item-name bold'>Module Development</p>
-              <p class='feature-content'> Used existing modules in company and built new function modules using module technique of JavaScript.</p>
-            </div>
-            <div class='feature'>
-              <div class='feature-icon img-wrapper shadow'>
-                <img src="">
-              </div>
-              <p class='item-name bold'>Enchantted to Me</p>
-              <p class='feature-content'>This is your first love story.</p>
-            </div>
-            <div class='feature'>
-              <div class='feature-icon img-wrapper shadow'>
-                <img src="">
-              </div>
-              <p class='item-name bold'>I18N</p>
-              <p class='feature-content'>Used i18n (internationalization) module to generate different country versions with one code (Only English version in Dec. 2014): build website using one project, dynamically identify users' language and replace the site's language and list the specific question pool.</p>
-            </div>
-            <div class='clear'></div>
-          </div>
-          <!--role-->
-          <div class='role'>
-            <p class='role-title'>Role In Team</p>
-            <p class='role-item'><span class='item-name bold'>Requirement Analysis:</span> Analyzed the function requirements and checked the details of interactions with PM (product manager), made advices about how to improve the use experience and ways to parry the limits of technic. Unite the forms of data communicating APIs with Server Team. Drafted the test criteria with the Test Team.</p>
-            <p class='role-item'><span class='item-name bold'>Frame Building:</span> Co-built the main code frame of the system with my partner according to the function modules, requirement of i18n, and function logics.</p>
-            <p class='role-item'><span class='item-name bold'>Interface Rendering:</span> Built the main scrollable page of website, the templates for each type of messages, and the expression style, which is mostly about HTML and CSS. Using the briefest architecture of HTML doms and the most fast-rendering CSS sequence to build the fundamental footstones of the system.</p>
-            <p class='role-item'><span class='item-name bold'>Interaction Function APIs:</span> Built partial JavaScript function APIs according to the requirements of interactions. Bound the click and automatic triggered events to the HTML doms.</p>
-            <p class='role-item'><span class='item-name bold'>Browsers Compatibility Adapting:</span> Although this site is only accessible inside Dolphin Browser, the different render logics according to different browser cores may led different representations. Especially, some features of representation are only supported by HTML5 and CSS3. Our team has tested and made adaptions, including parrying some troublesome HTML5 features and adjusting some representations, for most browser cores of mobile web browsers.</p>
-            <p class='role-item'><span class='item-name bold'>Google Analytics:</span> Used GA (Google Analytics) system to track user actions. Managed users' feedback and optimized the website.</p>
-          </div>
-        </div>
-        <div class='clear'></div>
-      </div>
+    <div class='other-title'><p>Add More...</p></div>
+    <div class='others'></div>
+    <div class='clear'></div>
 
-      <div class='work-item'>
-        <div class='links left'>
-          <div class='work-name shadow'>Customer Service</div>
-          <div class='preview img-ver-wrapper'>
-            <img class='shadow' src="../src/intern_customerService.png">
-          </div>
-          <a class='site-link' target='_blank' href="http://sp.dolphin.com">sp.dolphin.com</a>
-          <div class='basic-info bold'>
-            <p class='b-i-item'><span class='item-name'>Date: </span>July, 2014 ~ August, 2014</p>
-            <p class='b-i-item'><span class='item-name'>Platform: </span>mobile web browser</p>
-            <p class='b-i-item'><span class='item-name'>Languages: </span>HTML, JavaScript, jQuery, CSS</p>
-          </div>
-        </div>
+    <div class='about'></div>
 
-        <div class='contents left'>
-          <!--Features-->
-          <div class='introduction'>
-            <p class='intro-item'>This website is embedded inside Dolphin Browser which meaning to solve the common questions users may meet, and support a platform where users could feedback their experience. Seeking for a friendly interaction, we designed the website as an online chat system. The data of questions and answers and stored in database. We use Google Analytics to help managing the feedback data and find the points needed to be improved.</p>
-          </div>
-          <div class='features-wrapper'>
-            <div class='feature'>
-              <div class='feature-icon img-wrapper shadow'>
-                <img src="">
-              </div>
-              <p class='item-name bold'>Module Development</p>
-              <p class='feature-content'> Used existing modules in company and built new function modules using module technique of JavaScript.</p>
-            </div>
-            <div class='feature'>
-              <div class='feature-icon img-wrapper shadow'>
-                <img src="">
-              </div>
-              <p class='item-name bold'>Enchantted to Me</p>
-              <p class='feature-content'>This is your first love story.</p>
-            </div>
-            <div class='feature'>
-              <div class='feature-icon img-wrapper shadow'>
-                <img src="">
-              </div>
-              <p class='item-name bold'>I18N</p>
-              <p class='feature-content'>Used i18n (internationalization) module to generate different country versions with one code (Only English version in Dec. 2014): build website using one project, dynamically identify users' language and replace the site's language and list the specific question pool.</p>
-            </div>
-            <div class='clear'></div>
-          </div>
-          <!--role-->
-          <div class='role'>
-            <p class='role-title'>Role In Team</p>
-            <p class='role-item'><span class='item-name bold'>Requirement Analysis:</span> Analyzed the function requirements and checked the details of interactions with PM (product manager), made advices about how to improve the use experience and ways to parry the limits of technic. Unite the forms of data communicating APIs with Server Team. Drafted the test criteria with the Test Team.</p>
-            <p class='role-item'><span class='item-name bold'>Frame Building:</span> Co-built the main code frame of the system with my partner according to the function modules, requirement of i18n, and function logics.</p>
-            <p class='role-item'><span class='item-name bold'>Interface Rendering:</span> Built the main scrollable page of website, the templates for each type of messages, and the expression style, which is mostly about HTML and CSS. Using the briefest architecture of HTML doms and the most fast-rendering CSS sequence to build the fundamental footstones of the system.</p>
-            <p class='role-item'><span class='item-name bold'>Interaction Function APIs:</span> Built partial JavaScript function APIs according to the requirements of interactions. Bound the click and automatic triggered events to the HTML doms.</p>
-            <p class='role-item'><span class='item-name bold'>Browsers Compatibility Adapting:</span> Although this site is only accessible inside Dolphin Browser, the different render logics according to different browser cores may led different representations. Especially, some features of representation are only supported by HTML5 and CSS3. Our team has tested and made adaptions, including parrying some troublesome HTML5 features and adjusting some representations, for most browser cores of mobile web browsers.</p>
-            <p class='role-item'><span class='item-name bold'>Google Analytics:</span> Used GA (Google Analytics) system to track user actions. Managed users' feedback and optimized the website.</p>
-          </div>
-        </div>
-        <div class='clear'></div>
-      </div>
-
-      <div class='work-item'>
-        <div class='links left'>
-          <div class='work-name shadow'>Customer Service</div>
-          <div class='preview img-ver-wrapper'>
-            <img class='shadow' src="../src/intern_customerService.png">
-          </div>
-          <a class='site-link' target='_blank' href="http://sp.dolphin.com">sp.dolphin.com</a>
-          <div class='basic-info bold'>
-            <p class='b-i-item'><span class='item-name'>Date: </span>July, 2014 ~ August, 2014</p>
-            <p class='b-i-item'><span class='item-name'>Platform: </span>mobile web browser</p>
-            <p class='b-i-item'><span class='item-name'>Languages: </span>HTML, JavaScript, jQuery, CSS</p>
-          </div>
-        </div>
-
-        <div class='contents left'>
-          <!--Features-->
-          <div class='introduction'>
-            <p class='intro-item'>This website is embedded inside Dolphin Browser which meaning to solve the common questions users may meet, and support a platform where users could feedback their experience. Seeking for a friendly interaction, we designed the website as an online chat system. The data of questions and answers and stored in database. We use Google Analytics to help managing the feedback data and find the points needed to be improved.</p>
-          </div>
-          <div class='features-wrapper'>
-            <div class='feature'>
-              <div class='feature-icon img-wrapper shadow'>
-                <img src="">
-              </div>
-              <p class='item-name bold'>Module Development</p>
-              <p class='feature-content'> Used existing modules in company and built new function modules using module technique of JavaScript.</p>
-            </div>
-            <div class='feature'>
-              <div class='feature-icon img-wrapper shadow'>
-                <img src="">
-              </div>
-              <p class='item-name bold'>Enchantted to Me</p>
-              <p class='feature-content'>This is your first love story.</p>
-            </div>
-            <div class='feature'>
-              <div class='feature-icon img-wrapper shadow'>
-                <img src="">
-              </div>
-              <p class='item-name bold'>I18N</p>
-              <p class='feature-content'>Used i18n (internationalization) module to generate different country versions with one code (Only English version in Dec. 2014): build website using one project, dynamically identify users' language and replace the site's language and list the specific question pool.</p>
-            </div>
-            <div class='clear'></div>
-          </div>
-          <!--role-->
-          <div class='role'>
-            <p class='role-title'>Role In Team</p>
-            <p class='role-item'><span class='item-name bold'>Requirement Analysis:</span> Analyzed the function requirements and checked the details of interactions with PM (product manager), made advices about how to improve the use experience and ways to parry the limits of technic. Unite the forms of data communicating APIs with Server Team. Drafted the test criteria with the Test Team.</p>
-            <p class='role-item'><span class='item-name bold'>Frame Building:</span> Co-built the main code frame of the system with my partner according to the function modules, requirement of i18n, and function logics.</p>
-            <p class='role-item'><span class='item-name bold'>Interface Rendering:</span> Built the main scrollable page of website, the templates for each type of messages, and the expression style, which is mostly about HTML and CSS. Using the briefest architecture of HTML doms and the most fast-rendering CSS sequence to build the fundamental footstones of the system.</p>
-            <p class='role-item'><span class='item-name bold'>Interaction Function APIs:</span> Built partial JavaScript function APIs according to the requirements of interactions. Bound the click and automatic triggered events to the HTML doms.</p>
-            <p class='role-item'><span class='item-name bold'>Browsers Compatibility Adapting:</span> Although this site is only accessible inside Dolphin Browser, the different render logics according to different browser cores may led different representations. Especially, some features of representation are only supported by HTML5 and CSS3. Our team has tested and made adaptions, including parrying some troublesome HTML5 features and adjusting some representations, for most browser cores of mobile web browsers.</p>
-            <p class='role-item'><span class='item-name bold'>Google Analytics:</span> Used GA (Google Analytics) system to track user actions. Managed users' feedback and optimized the website.</p>
-          </div>
-        </div>
-        <div class='clear'></div>
-      </div>
-
-    </div>
-
-    <div class='others'>
-      <div class='other-title'><p>Add More...</p></div>
-      <div class='other-item'>
-        <p class='o-i-title'>Official Site [int]</p>
-        <div class='o-i-preview img-wrapper'>
-          <img src="" alt='preview picture'>
-        </div>
-        <a class='o-i-link' href="http://www.dolphin-browser.com">dolphin-browser.com</a>
-      </div>
-      <div class='other-item'>
-        <p class='o-i-title'>Official Site [int]</p>
-        <div class='o-i-preview img-wrapper'>
-          <img src="" alt='preview picture'>
-        </div>
-        <a class='o-i-link' href="http://www.dolphin-browser.com">dolphin-browser.com</a>
-      </div>
-      <div class='other-item'>
-        <p class='o-i-title'>Official Site [int]</p>
-        <div class='o-i-preview img-wrapper'>
-          <img src="" alt='preview picture'>
-        </div>
-        <a class='o-i-link' href="http://www.dolphin-browser.com">dolphin-browser.com</a>
-      </div>
-      <div class='clear'></div>
-    </div>
-    <div class='about'>
-
-    </div>
   </div>
+
+  <script id="info_tpl" type="text/html">
+    {{Position}}<br>
+    {{Team}}<br>
+    {{Time}}<br>
+    {{Keywords}}<br>
+  </script>
+
+  <script id="work_item_tpl" type="text/html">
+    <div class='work-item'>
+        <div class='links left'>
+          <div class='work-name shadow'>{{work_name}}</div>
+          <div class='preview img-ver-wrapper'>
+            <img class='shadow' src='"'{{icon_url}}'"'>
+          </div>
+          <a class='site-link' target='_blank' href='"'{{site_link_url}}'"'>{{site_link_name}}</a>
+          <div class='basic-info bold'>
+            <p class='b-i-item'><span class='item-name'>Date: </span>{{date}}</p>
+            <p class='b-i-item'><span class='item-name'>Platform: </span>{{plantform}}</p>
+            <p class='b-i-item'><span class='item-name'>Languages: </span>{{languages}}</p>
+          </div>
+        </div>
+
+        <div class='contents left'>
+          
+          <div class='introduction'>
+            <p class='intro-item'>{{introduction}}</p>
+          </div>
+
+          <div class='features-wrapper'>
+          {{each features as value i}}
+            <div class='feature'>
+              <div class='feature-icon img-wrapper shadow'>
+                <img src='"'{{icon_url}}'"'>
+              </div>
+              <p class='item-name bold'>{{value.feature_name}}</p>
+              <p class='feature-content'>{{value.feature_content}}</p>
+            </div>
+          {{/each}}
+            <div class='clear'></div>
+          </div>
+          
+          <div class='role'>
+            <p class='role-title'>Role In Team</p>
+            {{each roles as value i}}
+            <p class='role-item'><span class='item-name bold'>{{value.name}}:</span>{{value.content}}</p>
+            {{/each}}
+          </div>
+        </div>
+        <div class='clear'></div>
+      </div>
+  </script>
+
+  <script id="other_item_tpl" type="text/html">
+    <div class='other-item'>
+      <p class='o-i-title'>{{name}}</p>
+      <div class='o-i-preview img-wrapper'>
+        <img src='"'{{pic}}'"' alt='preview picture'>
+      </div>
+      <a class='o-i-link' href='"'{{link_url}}'"'>{{link_name}}</a>
+    </div>
+  </script>
 
   <script type="text/javascript">
     $(document).ready(function(){
@@ -252,7 +111,7 @@ get_header(); ?>
 
     function init(){
       var data,
-          url = 'http://harrybaa.com/data/intern.json';
+          url = "<?php bloginfo( 'template_directory' ); ?>/data/intern.json";
       loadData(url);
     }
 
@@ -271,9 +130,45 @@ get_header(); ?>
     }
 
     function renderData(res){
-      var fragment,
-          data = res;
-      console.log(data);
+      var fragInfo = '',
+          fragWork = '',
+          fragOther = '',
+          data = res || '';
+      // console.log(data);
+      if(data != ''){
+        fragInfo += renderInfo(data.info);
+        fragWork += renderWorks(data.works);
+        fragOther += renderOthers(data.others);
+      }
+      $('.info-block-p').html(fragInfo);
+      $('.big-info-block-p').html(fragInfo);
+      $('.works').html(fragWork);
+      $('.others').html($('.others').html + fragOther);
+    }
+
+    function renderInfo(info){
+      var fragment = '';
+      if(info != '')
+          fragment += template('info_tpl', info);
+      return fragment;
+    }
+
+    function renderWorks(works){
+      var fragment = '';
+      if(works != '')
+        works.forEach(function(value, i){
+          fragment += template('work_item_tpl', value);
+        })
+      return fragment;
+    }
+
+    function renderOthers(others){
+      var fragment = '';
+      if(others != '')
+        others.forEach(function(value, i){
+          fragment += template('other_item_tpl', value);
+        })
+      return fragment;
     }
 
     function registEven () {
