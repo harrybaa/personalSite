@@ -37,7 +37,7 @@ get_header(); ?>
     <div class='others'></div>
     <div class='clear'></div>
 
-    <div class='about'></div>
+    <!-- <div class='about'></div> -->
 
   </div>
 
@@ -53,9 +53,9 @@ get_header(); ?>
         <div class='links left'>
           <div class='work-name shadow'>{{work_name}}</div>
           <div class='preview img-ver-wrapper'>
-            <img class='shadow' src='"'{{icon_url}}'"'>
+            <img class='shadow' src='{{icon_url}}'>
           </div>
-          <a class='site-link' target='_blank' href='"'{{site_link_url}}'"'>{{site_link_name}}</a>
+          <a class='site-link' target='_blank' href='{{site_link_url}}'>{{site_link_name}}</a>
           <div class='basic-info bold'>
             <p class='b-i-item'><span class='item-name'>Date: </span>{{date}}</p>
             <p class='b-i-item'><span class='item-name'>Platform: </span>{{plantform}}</p>
@@ -85,7 +85,7 @@ get_header(); ?>
           <div class='role'>
             <p class='role-title'>Role In Team</p>
             {{each roles as value i}}
-            <p class='role-item'><span class='item-name bold'>{{value.name}}:</span>{{value.content}}</p>
+            <p class='role-item'><span class='item-name bold'>{{value.name}}: </span>{{value.content}}</p>
             {{/each}}
           </div>
         </div>
@@ -97,9 +97,9 @@ get_header(); ?>
     <div class='other-item'>
       <p class='o-i-title'>{{name}}</p>
       <div class='o-i-preview img-wrapper'>
-        <img src='"'{{pic}}'"' alt='preview picture'>
+        <img class='o-i-p-i' src='{{pic}}' alt='preview picture'>
       </div>
-      <a class='o-i-link' href='"'{{link_url}}'"'>{{link_name}}</a>
+      <a class='o-i-link' href='{{link_url}}'>{{link_name}}</a>
     </div>
   </script>
 
@@ -143,7 +143,7 @@ get_header(); ?>
       $('.info-block-p').html(fragInfo);
       $('.big-info-block-p').html(fragInfo);
       $('.works').html(fragWork);
-      $('.others').html($('.others').html + fragOther);
+      $('.others').html(fragOther);
     }
 
     function renderInfo(info){

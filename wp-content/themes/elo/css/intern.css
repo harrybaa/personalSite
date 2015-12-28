@@ -252,43 +252,48 @@
     }
 
 
+.other-title{
+  display: block;
+  width: 960px;
+  height: 56px;
+  margin: 0 auto;
+  color: white;
+  font-size: 40px;
+  font-style: italic;
+  text-shadow: 0 0 5px #FFA500;
+}
 .others{
   width: 100%;
   min-width: 960px;
   height: auto;
 }
-  .others .other-title{
-    display: block;
-    width: 960px;
-    height: 36px;
-    margin: 0 auto;
-    color: orange;
-    font-size: 24px;
-  }
   .others .other-item{
     float: left;
     width: 33.3%;
-    height: 300px;
+    height: 338px;
     text-align: center;
     background: #3eb034;
   }
     .others .o-i-title{
-      padding: 25px 0 5px 0;
+      margin: 25px 0 5px 0;
       font-size: 32px;
-      font-weight: bold;
       color: orange;
     }
     .others .o-i-preview{
-      width: 50%;
+      width: 80%;
+      max-width: 528px;
       height: 200px;
       margin: 0 auto;
       overflow: hidden;
     }
+      .others .o-i-preview .o-i-p-i{
+        box-shadow: 0 2px 5px #0f0f0f;
+      }
     .others .o-i-link{
       display: block;
       font-size: 24px;
       font-weight: bold;
-      color: #d3d3d3;
+      color: #F0F0ED;
       text-decoration: underline;
       transition: all 0.5s;
       -moz-transition: all 0.5s;

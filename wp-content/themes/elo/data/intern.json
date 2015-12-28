@@ -8,8 +8,8 @@
   "works": [
     {
       "work_name": "Customer Service",
-      "icon_url": "#",
-      "site_link_name": "sp.dolphin.com (project dropped)",
+      "icon_url": "http://harrybaa.com/src/intern_customerService.png",
+      "site_link_name": "sp.dolphin.com (closed)",
       "site_link_url": "http://sp.dolphin.com",
       "date": "July, 2014 ~ August, 2014",
       "plantform": "mobile web browser" ,
@@ -62,12 +62,12 @@
     
     {
       "work_name": "Site Navigation",
-      "icon_url": "#",
+      "icon_url": "http://harrybaa.com/src/intern_navigation.png",
       "site_link_name": "nav-dlphn.appspot.com",
       "site_link_url": "http://nav.dolphin.com/int/?lc=ja-jp",
       "date": "July, 2014 ~ January, 2015",
       "plantform": "mobile web browser" ,
-      "languages": "HTML, JavaScript, jQuery, CSS",
+      "languages": "HTML, SASS JavaScript, jQuery",
       "introduction": "This is the nested navigation site for dolphin browser which will show commonly used websites for users. What's truely amazing is this site will change  content dynamically according to the location. We have 13 countries and locations versions so far by Jan, 2015. We just have one code for the whole system, site will be built by templates dynamically.",
       "features": [
         {
@@ -107,29 +107,29 @@
     },
     
     {
-      "work_name": "Customer Service",
-      "icon_url": "#",
-      "site_link_name": "sp.dolphin.com",
-      "site_link_url": "http://sp.dolphin.com",
-      "date": "July, 2014 ~ August, 2014",
+      "work_name": "Uninstall Survey",
+      "icon_url": "http://harrybaa.com/src/intern_survey.png",
+      "site_link_name": "http://survey.dolphin.com/int/uninstall",
+      "site_link_url": "http://survey.dolphin.com/int/uninstall.html?id=2b239a1290b4e38c819acbf45b03be9e&pn=mobi.mgeek.TunnyBrowser&v=359&s=ofw&it=1408504172264&ut=1408504148000&m=HUAWEI%20C8813Q&os=android&osv=4.1.2&cc=CN&no=46003&lang=zh&jk=enable&ft=1088&ht=5818&ct=0&nt=1&res=480*854&ifi=1&lts=1&iow=0&iom=0&iospd=0&iogs=1&debug=false&sl=zh_CN&t=1408504222000",
+      "date": "September, 2014 ~ October, 2014",
       "plantform": "mobile web browser" ,
-      "languages": "HTML, JavaScript, jQuery, CSS",
-      "introduction": "This website is embedded inside Dolphin Browser which meaning to solve the common questions users may meet, and support a platform where users could feedback their experience. Seeking for a friendly interaction, we designed the website as an online chat system. The data of questions and answers and stored in database. We use Google Analytics to help managing the feedback data and find the points needed to be improved.",
+      "languages": "HTML, CSS, JavaScript, PHP",
+      "introduction": "Once upon uninstall happens, we want to collect some information from users. Like thier phone model, carrier, OS, and most importantly is the reason why uninstall. This website will call automaticly after uninstall happens. And it would gathers phone information, do a quick survey, send these back to server.",
       "features": [
         {
-          "feature_name": "Module Development",
+          "feature_name": "Data Analyze",
           "icon_url": "#",
-          "feature_content": "Used existing modules in company and built new function modules using module technique of JavaScript."         
+          "feature_content": "Browser send information to this site by appending arguments at the URL. We will use scripts to decipher arguments, then send them to Google Analytics and data analysis system in our own company."         
         },
         {
-          "feature_name": "Enchantted to Me",
+          "feature_name": "Shuffle All",
           "icon_url": "#",
-          "feature_content": "This is your first love story."         
+          "feature_content": "questions will be shuffled everytime. To prevent users choose questions by the position, like the first one and last one, we shuffle the sequence of questions all the time. Every survey is different!"         
         },
         {
           "feature_name": "I18N",
           "icon_url": "#",
-          "feature_content": "Used i18n (internationalization) module to generate different country versions with one code (Only English version in Dec. 2014): build website using one project, dynamically identify users' language and replace the site's language and list the specific question pool."         
+          "feature_content": "Used i18n (internationalization) module to generate different country versions with one code. Build website using one project, dynamically identify users' language and replace the site's language and list the specific question pool."         
         }
       ],
       "roles": [
@@ -164,18 +164,18 @@
   "others": [
     {
       "name": "Official Site [int]",
+      "pic": "http://harrybaa.com/src/intern_official.png",
+      "link_name": "dolphin.com",
+      "link_url": "http://www.dolphin.com"
+    },
+    {
+      "name": "Game store",
       "pic": "#",
       "link_name": "http://www.dolphin-browser.com",
       "link_url": "dolphin-browser.com"
     },
     {
-      "name": "Official Site [int]",
-      "pic": "#",
-      "link_name": "http://www.dolphin-browser.com",
-      "link_url": "dolphin-browser.com"
-    },
-    {
-      "name": "Official Site [int]",
+      "name": "Hot Music List",
       "pic": "#",
       "link_name": "http://www.dolphin-browser.com",
       "link_url": "dolphin-browser.com"
