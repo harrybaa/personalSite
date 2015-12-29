@@ -73,7 +73,7 @@ get_header(); ?>
           {{each features as value i}}
             <div class='feature'>
               <div class='feature-icon img-wrapper shadow'>
-                <img src='"'{{icon_url}}'"'>
+                <img src='{{value.icon_url}}'>
               </div>
               <p class='item-name bold'>{{value.feature_name}}</p>
               <p class='feature-content'>{{value.feature_content}}</p>

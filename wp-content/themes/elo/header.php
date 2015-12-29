@@ -68,17 +68,16 @@
 <div class="nav-block">
   <ul class="top-nav">
     <li class="nav-index" >
-      <a href="./index.html">
+      <a href="http://www.harrybaa.com">
         <span><img src="<?php bloginfo( 'template_directory' ); ?>/src/load_pic.png"></span>
         <span id="navIndexTitle">&nbsp;Harry's <br>&nbsp;Dream Home</span>
       </a>
     </li>
-    <li class="nav-item"><a href="./constructing.html">Intern</a></li>
-    <li class="nav-item"><a href="./constructing.html">Projects</a></li>
-    <li class="nav-item"><a href="./constructing.html">Activities</a></li>
-    <!-- <li class="nav-item"><a href="./constructing.html">Essays</a></li> -->
-    <li class="nav-item"><a href="./constructing.html">Blog</a></li>
-    <li class="nav-item"><a href="./constructing.html">About</a></li>
+    <li class="nav-item"><a href="http://www.harrybaa.com/intern">Intern</a></li>
+    <li class="nav-item"><a href="http://www.harrybaa.com/projects">Projects</a></li>
+    <li class="nav-item"><a href="http://www.harrybaa.com/activities">Activities</a></li>
+    <li class="nav-item"><a href="http://www.harrybaa.com/blog">Blog</a></li>
+    <li class="nav-item"><a href="http://www.harrybaa.com/about">About</a></li>
   </ul>
   <div class="top-mobile-menu" id="mobileMenu">
     <p>MENU</p>

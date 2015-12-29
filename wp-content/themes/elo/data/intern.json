@@ -18,17 +18,17 @@
       "features": [
         {
           "feature_name": "Module Development",
-          "icon_url": "#",
+          "icon_url": "http://harrybaa.com/src/icon_puzzle.png",
           "feature_content": "Used existing modules in company and built new function modules using module technique of JavaScript."         
         },
         {
           "feature_name": "Chat Simulation",
-          "icon_url": "#",
+          "icon_url": "http://harrybaa.com/src/icon_chat.png",
           "feature_content": "Used a fluid layout with fixed header and foot menu to simulate the chat apps like wechat, messenger. Should be given enough testes for different resolution."         
         },
         {
           "feature_name": "I18N",
-          "icon_url": "#",
+          "icon_url": "http://harrybaa.com/src/icon_translate.png",
           "feature_content": "Used i18n (internationalization) module to generate different country versions with one code (Only English version in Dec. 2014): build website using one project, dynamically identify users' language and replace the site's language and list the specific question pool."         
         }
       ],
@@ -72,17 +72,17 @@
       "features": [
         {
           "feature_name": "Dynamical Lego",
-          "icon_url": "#",
+          "icon_url": "http://harrybaa.com/src/icon_lego.png",
           "feature_content": "Define templates could simplier the work we will repeatly do. We have made many unique modules (including music, video, news,ect.) for this site. What modules will represent in site defined by the data stored in JSON file. By this way, we could build our Lego website easily."         
         },
         {
           "feature_name": "Theme",
-          "icon_url": "#",
+          "icon_url": "http://harrybaa.com/src/icon_theme.png",
           "feature_content": "Different modules in this site have different themes. Every themes should not only cater the local costom, but also have unique color, representing formate, even different write direction."    
         },
         {
           "feature_name": "International",
-          "icon_url": "#",
+          "icon_url": "http://harrybaa.com/src/icon_international.png",
           "feature_content": "Because we have to serve different countries, we have to change the content for different location. This function realized by browser send different arguments appended to the url. Then we use js to fetch different JSON data and render different website accordingly."         
         }
       ],
@@ -118,17 +118,17 @@
       "features": [
         {
           "feature_name": "Data Analyze",
-          "icon_url": "#",
+          "icon_url": "http://harrybaa.com/src/icon_data.png",
           "feature_content": "Browser send information to this site by appending arguments at the URL. We will use scripts to decipher arguments, then send them to Google Analytics and data analysis system in our own company."         
         },
         {
           "feature_name": "Shuffle All",
-          "icon_url": "#",
+          "icon_url": "http://harrybaa.com/src/icon_shuffle.png",
           "feature_content": "questions will be shuffled everytime. To prevent users choose questions by the position, like the first one and last one, we shuffle the sequence of questions all the time. Every survey is different!"         
         },
         {
           "feature_name": "I18N",
-          "icon_url": "#",
+          "icon_url": "http://harrybaa.com/src/icon_language.png",
           "feature_content": "Used i18n (internationalization) module to generate different country versions with one code. Build website using one project, dynamically identify users' language and replace the site's language and list the specific question pool."         
         }
       ],
@@ -163,22 +163,22 @@
   ],
   "others": [
     {
+      "name": "Game store",
+      "pic": "http://harrybaa.com/src/intern_gamecenter.png",
+      "link_name": "gamecenter.dolphin.com",
+      "link_url": "http://gamecenter.dolphin.com"
+    },
+    {
       "name": "Official Site [int]",
       "pic": "http://harrybaa.com/src/intern_official.png",
       "link_name": "dolphin.com",
       "link_url": "http://www.dolphin.com"
     },
     {
-      "name": "Game store",
-      "pic": "#",
-      "link_name": "http://www.dolphin-browser.com",
-      "link_url": "dolphin-browser.com"
-    },
-    {
       "name": "Hot Music List",
-      "pic": "#",
-      "link_name": "http://www.dolphin-browser.com",
-      "link_url": "dolphin-browser.com"
+      "pic": "http://harrybaa.com/src/intern_gamecenter.png",
+      "link_name": "hotmusic.dolphin.com",
+      "link_url": "#"
     }
   ]
 }

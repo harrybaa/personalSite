@@ -228,8 +228,13 @@
           height: 100px;
           margin: 0 auto 10px auto;
           border-radius: 50%;
-          background: #cfd1d8;
+          background: #f1f1f1;
         }
+          .feature-icon img{
+            width: 60px;
+            height: auto;
+            margin: 20px;
+          }
         .works .feature .feature-content{
           margin: 0 5px;
           text-align: left;
@@ -286,9 +291,6 @@
       margin: 0 auto;
       overflow: hidden;
     }
-      .others .o-i-preview .o-i-p-i{
-        box-shadow: 0 2px 5px #0f0f0f;
-      }
     .others .o-i-link{
       display: block;
       font-size: 24px;
