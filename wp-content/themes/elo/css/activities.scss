@@ -1,0 +1,157 @@
+$bg-choir: #F4F8FA;
+$bg-su: #E0EAC6;
+$border-black: #292929;
+$text-white: #f2f2f2;
+
+.main{
+  
+}
+
+.tab-menu{
+  position: relative;
+  top: 76px;
+  width: 100%;
+  height: 42px;
+  z-index: 999;
+  .menu-frame{
+    display: block;
+    width: 300px;
+    height: 42px;
+    margin: 0 auto;
+    .menu-item{
+      display: inline-block;
+      float: left;
+      width: 148px;
+      height: 40px;
+      line-height: 40px;
+      text-align: center;
+      color: $border-black;
+      border: solid 1px $border-black;
+      cursor: pointer;
+    }
+    .menu-item:hover{
+        color: $text-white;
+        background-color: $border-black;
+    }
+    .menu-item.active{
+        color: $text-white;
+        background-color: $border-black;
+    }
+    .menu-item.choir{
+      border-radius: 5px 0 0 5px;
+      border-right: none;
+    }
+    .menu-item.su{
+      border-radius: 0 5px 5px 0;
+    }
+  }
+}
+
+.tab-container{
+  display: block;
+  position: relative;
+  width: 100%;
+  min-height: 800px;
+  .tab-frame{
+    display: none;
+    width: 100%;
+    min-height: 800px;
+    &.active{
+      display: block;
+    }
+    &.tab-choir{
+      background-image: url('http://www.harrybaa.com/src/choir_bg.png');
+      background-repeat: no-repeat;
+      background-position: center bottom;
+      background-color: $bg-choir;
+      overflow: hidden;
+    }
+    &.tab-su{
+      background-image: url('http://www.harrybaa.com/src/su_bg.png');
+      background-repeat: no-repeat;
+      background-position: center bottom;
+      background-color: $bg-su;
+
+    }
+    .tab-main{
+      padding-top: 100px; 
+      padding-bottom: 548px;
+      width: 980px;
+      margin: 0 auto;
+      .section{
+        display: block;
+        width: 100%;
+        height: auto;
+        margin-bottom: 38px;
+        .choir-info-container{
+          padding: 40px 0;
+          width: 440px;
+          height: 400px;
+          margin-right: 20px;
+          .c-i-c-text{
+            padding:14px;
+            // border: solid 18px #fff;
+            // border-bottom: solid 38px #fff;
+            // background: #f9f9f9;
+          }
+        }
+        .choir-video-container{
+          width: 480px;
+          height: 400px;
+          .c-v-c-content{
+            position: relative;
+            margin-top: 50%;
+            transform: translateY(-50%);
+          }
+        }
+        &.gallery{
+          // width: 1960px;
+          // height: auto;
+          .gallery-content{
+            width: 1440px;
+            height: auto;
+            margin-left: 50%;
+            transform: translate(-50%);
+          }
+        }
+        &.role{
+          text-align: center;
+          .c-r-header{
+            font-size: 28px;
+            font-weight: bold;
+          }
+          .c-r-l-item{
+            position: relative;
+            margin-left: 20px;
+            // &:before{
+            //   content: "";
+            //   position: absolute;
+            //   display: inline-block;
+            //   top: 14px;
+            //   left: -11px;
+            //   width: 0;
+            //   height: 0;
+            //   border: 2px solid $border-black;
+            //   border-radius: 2px;
+            // }
+          }
+        }
+        &.hr{
+          height: 20px;
+          border-bottom: dashed 1px $border-black;
+        }
+        &.ucchuros{
+          width: 600px;
+        }
+
+        .su-info-container{
+          width: 100%;
+        }
+      }
+    }
+  }
+
+}
+
+
+

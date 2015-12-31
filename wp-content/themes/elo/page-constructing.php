@@ -17,7 +17,7 @@ get_header(); ?>
 			position: absolute;
 			top: 40%;
 			left: 50%;
-			width: 200px;
+			width: 300px;
 			margin-left: -100px;
 		}
 		.main .sign{
