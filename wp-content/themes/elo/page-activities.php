@@ -22,7 +22,7 @@ get_header(); ?>
             <div class="choir-info-container left">
               <div class="c-i-c-text">
                 <p>
-                <span style="font-size:28px;"><b>Snail Choir </b>蜗牛合唱团<br>
+                <span style="font-size:28px;"><b>The Snail Choir </b><br>
                 International School of Software, Wuhan University</span><br>
                 <b>Leader (in 2012-2013)</b>,  joined between 2011-2015<br><br>
                 WE LOVE MUSIC, WE LOVE BEING IN THIS BIG FAMILY. Snail Choir is a student group totally managed by our students. Though we are amatuars, it can't hedge us singing sweet and difficult songs, building a good team and giving great works.
@@ -67,7 +67,7 @@ get_header(); ?>
         <div class="tab-main">
           <div class="section">
             <div class="su-info-container left">
-              <span style="font-size:28px;"><b>Students Union of Wuhan University</b><br>
+              <span style="font-size:28px;"><b>The Students Union</b>, Wuhan University<br>
               Vice Minister of Secretary Department</span><br>
               2011 – 2013<br><br>
               Role:<br>

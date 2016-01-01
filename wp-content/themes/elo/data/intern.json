@@ -175,10 +175,10 @@
       "link_url": "http://www.dolphin.com"
     },
     {
-      "name": "Hot Music List",
-      "pic": "http://harrybaa.com/src/intern_gamecenter.png",
-      "link_name": "hotmusic.dolphin.com",
-      "link_url": "#"
+      "name": "Campus Recruitment",
+      "pic": "http://harrybaa.com/src/intern_campus.png",
+      "link_name": "cn.dolphin.com/job-campus",
+      "link_url": "http://cn.dolphin.com/job-campus"
     }
   ]
 }

@@ -8,9 +8,30 @@ video {
   height: auto;
   z-index: -100;
   transform: translateX(-50%) translateY(-50%);
-  background: url('//demosthenes.info/assets/images/polina.jpg') no-repeat;
+  background: url("http://www.harrybaa.com/src/video_cover.png") no-repeat;
   background-size: cover;
   transition: 1s opacity;
+}
+
+.fz18{
+  font-size: 18px;
+}
+.fz24{
+  font-size: 24px;
+}
+.fz28{
+  font-size: 28px;
+}
+.fz38{
+  font-size: 38px;
+}
+.link{
+  cursor: pointer;
+  &:hover{
+    color: #56D4CA;
+    font-style: italic;
+    text-decoration: underline;
+  }
 }
 
 .main{
@@ -22,4 +43,47 @@ video {
   overflow: scroll;
   color: #e2e2e2;
   background: #292929;
+  .paragraph{
+    margin-bottom: 28px;
+    .header{
+      font-weight: bold;
+      font-size: 24px;
+    }
+    .block-line{
+      display: block;
+      padding-left: 30px;
+      background-position: left center;
+      background-repeat: no-repeat;
+      &.phone{
+        background-image: url("http://www.harrybaa.com/src/phone.png");
+      }
+      &.email{
+        background-image: url("http://www.harrybaa.com/src/email.png");
+      }
+      &.location{
+        background-image: url("http://www.harrybaa.com/src/location.png");
+      }
+    }
+    .level{
+      display: block;
+      width: 320px;
+      background-position: right center;
+      background-repeat: no-repeat;
+      &.l5{
+        background-image: url("http://www.harrybaa.com/src/web_bar_5.png");
+      }
+      &.l4{
+        background-image: url("http://www.harrybaa.com/src/web_bar_4.png");
+      }
+      &.l3{
+        background-image: url("http://www.harrybaa.com/src/web_bar_3.png");
+      }
+      &.l2{
+        background-image: url("http://www.harrybaa.com/src/web_bar_2.png");
+      }
+      &.l1{
+        background-image: url("http://www.harrybaa.com/src/web_bar_1.png");
+      }
+    }
+  }
 }
