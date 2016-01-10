@@ -9,8 +9,8 @@ get_header(); ?>
 
  <!-- main block -->
 <video autoplay  poster="../src/video_cover.png" id="bgvid" loop>
-  <source src="../src/selfies_camo.webm" type="video/webm">
-  <source src="../src/selfies_camo.mp4" type="video/mp4">
+  <source src="../src/bg_cartoon.webm" type="video/webm">
+  <source src="../src/bg_cartoon.mp4" type="video/mp4">
 </video>
 
 <div class="main">

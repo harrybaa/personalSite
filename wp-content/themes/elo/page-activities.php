@@ -103,6 +103,7 @@ get_header(); ?>
         $(".tab-choir").removeClass("active");
       });
     }
+
 </script>
 
 <?php get_footer(); ?>

@@ -13,6 +13,7 @@
 
 get_header(); ?>
 
+<link rel="stylesheet" type="text/css" href="<?php bloginfo( 'template_directory' ); ?>/css/index.css">
 
 <div class="wel-pic" id="wel_pic">
   <div class="welcome-title">
@@ -35,29 +36,16 @@ get_header(); ?>
 
 <div class="pro-block">
   <div class="sample index1">
-    <p class="pro-title">Intern@<br>Dolphin</p>
-    <ul class="pro-sam-list">
-      <li><a>Customer Service System</a></li>
-      <li><a>Crush Analysis Site</a></li>
-      <li><a>Uninstall Query System</a></li>
-      <li><a>International APP Store</a></li>
-      <li><a>More...</a></li>
-    </ul>
+    <a class="hyperlink" href="http://www.harrybaa.com/intern"></a>
   </div>
   <div class="sample index2">
-    <img src="<?php bloginfo( 'template_directory' ); ?>/src/cool.png">
-    <h1>Cool.list</h1>
-    <h3>2013 practical training</h3>
+    <a class="hyperlink" target="_blank" href="http://pasa.ucmerced.edu"></a>
   </div>
   <div class="sample index3">
-    <h3>2014 Inter Imagine Cup</h3>
-    <h1>SPOT LBS System</h1>
-    <span id="spot_logo_block">
-      <img id="spot_logo" src="<?php bloginfo( 'template_directory' ); ?>/src/spot_logo.png">
-    </span>
+    <a class="hyperlink" href="http://www.harrybaa.com/projects"></a>
   </div>
   <div class="sample index4">
-    <h1 id="choir-title" class="pro-title">Activity@<br>Choir</h1>
+    <a class="hyperlink" href="http://www.harrybaa.com/activities"></a>
   </div>
 </div>
 
