@@ -1,3 +1,3 @@
 $(document).ready(function(){
-	$(".loading-wrapper").delay(1000).fadeOut(800);
+	$(".loading-wrapper").delay(100).fadeOut(400);
 });
