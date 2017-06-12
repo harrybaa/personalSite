@@ -45,6 +45,8 @@ body, div, ul, li, span {
 body {
   color: $font-white;
   background: $theme-dark;
+  background-image: url('../../build/src/bgwave.png');
+  background-repeat: repeat;
 }
 
 ul {
@@ -83,7 +85,6 @@ a {
   width: 100%;
   height: auto;
   position: relative;
-  z-index: 9999;
   background-image: url('../../build/src/dotbg.png');
   background-repeat: repeat-x;
   background-size: contain;
@@ -93,6 +94,7 @@ a {
     height: 280px;
     margin: 0 auto;
     text-align: center;
+    z-index: 9999;
 
     .menu-home {
       width: 320px;
@@ -181,6 +183,10 @@ a {
 
       &:hover {
         background-image: $board-neon;
+
+        .content-sticker {
+          filter: brightness(0.5);
+        }
       }
 
       .content-left {
@@ -234,20 +240,47 @@ a {
           height: 20px;
         }
       }
+
+      .content-sticker {
+        position: absolute;
+        right: 20px;
+        bottom: 0;
+        width: 160px;
+        height: 120px;
+        background-size: contain;
+        background-repeat: no-repeat;
+        filter: brightness(0);
+      }
     }
   }
 }
 
+//sticker for projects
+.content-sticker.ieee {
+  background-image: url('./build/src/ieee.png');
+}
+
+.footsticker {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  width: 420px;
+  z-index: -99;
+}
+
 .footer {
   width: 100%;
-  margin-top: 120px;
-  margin-bottom: 40px;
 
   .foot-wrap {
-    width: 600px;
-    margin: 0 auto;
+    width: 298px;
+    height: 200px;
+    padding-top: 87px;
+    margin: 0 auto 120px auto;
     text-align: center;
     color: $font-grey;
+    background-image: url('../../build/src/footbg.png');
+    background-repeat: no-repeat;
+    background-size: contain;
 
     p {
       margin: 0.3em;

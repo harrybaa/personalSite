@@ -5,28 +5,28 @@
     "link": "http://www.ieee.org/index.html",
     "intro": "Master research topic about NVM (none-volatilized memory). Mainly responsed for testing the performance of NVM. Also tried to find the optimization potentials. Paper 'Performance Evaluation and Modeling of HPC I/O on Non-Volatile Memory' published in NAS IEEE 2017 conference.",
     "date": "08/2015 - 05/2017",
-    "img": ""
+    "img": "./static/ieee.png"
   }, {
     "title": "Lottery System",
     "menu_title": "lottery",
     "link": "http://www.harrybaa.com/lab/LS/",
     "intro": "A lottery system made for Shanghai Haiyan company. A simple and easy to use lottery system. Used for 15 days in a row and sent out 10,000 prizes in total.",
     "date": "04/2017",
-    "img": ""
+    "img": "./static/lottery.png"
   }, {
     "title": "PASA Lab Official Site",
     "menu_title": "PASA",
     "link": "http://pasa.ucmerced.edu/",
     "intro": "The official site for my lab in UC Merced. Used to introduce our lab and announce recent news. Powered by WordPress and used MVC framework to danamically present news.",
     "date": "08/2015",
-    "img": ""
+    "img": "./static/pasa.png"
   }, {
     "title": "Bug Prediction System for Github Reposites",
     "menu_title": "Bug",
     "link": "",
     "intro": "Built a system that collects code features in given GitHub repository by Python and uses machine learning algorithms supported by Windows Azure to predict potential bugs. The results show more than 90% correctness.",
     "date": "01/2016 - 05/2016",
-    "img": ""
+    "img": "./static/github.png"
   }, {
     "title": "Collecsion Detect Algorithm for 3D Objects",
     "menu_title": "Collect",
