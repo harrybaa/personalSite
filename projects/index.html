@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Harrybaa-Projects</title>
+    <script type="text/javascript" src="../js/vue.min.js"></script>
+    <script type="text/javascript" src="../js/jquery.js"></script>
+    <!-- <script type="text/javascript" src="./build/js/all.min.js"></script> -->
+    <script type="text/javascript" src="./client/js/main.js"></script>
+    <script type="text/javascript" src="./client/js/controller.js"></script>
+    <link rel="stylesheet" href="./build/css/master.css">
+  </head>
+  <body>
+
+    <div class="header">
+      <div class="menu-bar" id="app-menu">
+        <ul class="">
+          <li class="left menu-home">
+            <div class="menu-home-title img-wrap">
+              <img src="./build/src/nowOpen.png" alt="now openning...">
+            </div>
+            <div class="menu-home-footer left">
+              <div class="menu-home-foot-left left">
+                PROJECTS<br>
+                PRESENTATION
+              </div>
+              <div class="menu-home-foot-right left">
+                刘伟
+              </div>
+              <div class="clear"></div>
+            </div>
+            <div class="menu-home-foot-album left">
+              ALBUM<br>
+              No.<br>
+              <span class=""><b>00</b></span>
+            </div>
+            <div class="clear"></div>
+          </li>
+          <li v-for="(item, index) in menu" class="menu-item left">
+            {{index < 9 ? "0" + (index + 1) : (index + 1)}}. {{item}}
+          </li>
+          <li class="clear"></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="content" id="app-content">
+      <ul class="content-wrap">
+        <li v-for="(item, index) in projects" class="content-item">
+          <div class="content-left left">
+            <div class="content-index">
+              {{index < 9 ? "0" + (index + 1) : (index + 1)}}.
+            </div>
+            <div class="content-title">
+              {{item.title}}
+            </div>
+          </div>
+          <div class="content-right left">
+            <div class="content-date">
+              {{item.date}}
+            </div>
+            <div class="content-intro">
+              {{item.intro}}
+            </div>
+            <div class="content-link">
+              <a href="{{item.link}}">{{item.link}}</a>
+            </div>
+            <div class="content-more-bottom">
+              more...
+            </div>
+          </div>
+          <div class="content-sticker {{item.menu_title}}"></div>
+          <div class="clear"></div>
+        </li>
+      </ul>
+    </div>
+
+    <div class="footsticker img-wrap">
+      <img src="./build/src/footsticker.png" alt="">
+    </div>
+
+    <div class="footer">
+      <div class="foot-wrap">
+        <p>Pressented by Harry Liu.</p>
+        <p>Powered by <a href="https://vuejs.org/">Vue.js</a>.</p>
+        <p>Source code available in <a href="#">Github</a>.</p>
+      </div>
+    </div>
+
+    <script type="text/javascript">
+
+
+    </script>
+  </body>
+</html>
