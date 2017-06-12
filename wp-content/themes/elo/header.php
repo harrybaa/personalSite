@@ -86,7 +86,7 @@
     <li class="nav-item"><a href="http://www.harrybaa.com/intern">Intern</a></li>
     <li class="nav-item"><a href="http://www.harrybaa.com/projects">Projects</a></li>
     <li class="nav-item"><a href="http://www.harrybaa.com/activities">Activities</a></li>
-    <li class="nav-item"><a href="http://www.harrybaa.com/blog">Blog</a></li>
+    <li class="nav-item"><a href="http://www.harrybaa.com/skills">Skills</a></li>
     <li class="nav-item"><a href="http://www.harrybaa.com/about">About</a></li>
   </ul>
   <div class="top-mobile-menu" id="mobileMenu">
@@ -103,5 +103,3 @@
     <li class="mobile-nav-item"><a href="./constructing.html">About</a></li>
   </ul>
 </div>
-
-
