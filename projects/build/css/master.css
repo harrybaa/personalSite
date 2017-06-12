@@ -176,6 +176,7 @@ a {
   background-image: url("./build/src/ieee.png"); }
 
 .footsticker {
+  display: none;
   position: absolute;
   right: 0;
   bottom: 0;
