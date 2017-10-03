@@ -1,0 +1,26 @@
+{
+  "name": "personalsite",
+  "version": "2.0.0",
+  "description": "Personal site for nnniuweiba",
+  "main": "index.js",
+  "scripts": {
+    "build": "webpack",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/harrybaa/personalSite.git"
+  },
+  "keywords": [
+    "weiba"
+  ],
+  "author": "nnniuweiba",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/harrybaa/personalSite/issues"
+  },
+  "homepage": "https://github.com/harrybaa/personalSite#readme",
+  "devDependencies": {
+    "webpack": "^3.6.0"
+  }
+}
