@@ -1,0 +1,124 @@
+@import "reset.css";
+@import "gridText.scss";
+
+// green tea milk theme
+$theme-milk: #EBECE6;
+$theme-tea: #BFDBB8;
+$theme-blue: #759FB9;
+$theme-grey: #BFBFBF;
+$theme-dark: #1E262A;
+
+body {
+  background: #EBECE6; // base board
+}
+
+a {
+  text-decoration: none;
+  color: $theme-dark;
+  cursor: pointer;
+}
+
+// home
+#home {
+  width: 100%;
+  height: 980px;
+  background: $theme-blue;
+}
+
+#sections {
+  width: 100%;
+  min-height: 1000px;
+  background: $theme-milk;
+}
+
+
+// footer
+#footer {
+  padding-top: 70px;
+  padding-bottom: 120px;
+  width: 100%;
+  color: $theme-milk;
+  background: $theme-dark;
+
+  #f-inner {
+    position: relative;
+    display: flex;
+    max-width: 1245px;
+    height: 270px;
+    // revise for different screens
+    margin: 0 9.5%;
+
+    #f-middle {
+      flex: 1;
+      padding: 20px 0;
+      height: 100%;
+      text-align: center;
+
+      .f-welcome {
+        font-size: 30px;
+        margin: 12px 0;
+      }
+
+      .f-mid-link {
+        border-top: 1px solid $theme-milk;
+        border-bottom: 1px solid $theme-milk;
+        font-size: 78px;
+        margin: 0 40px;
+        transition: all 0.5s cubic-bezier(0.445, 0.05, 0.55, 0.95);
+        cursor: pointer;
+
+        a {
+          color: $theme-milk;
+          transition: all 0.5s cubic-bezier(0.445, 0.05, 0.55, 0.95);
+        }
+
+        &:hover {
+          border-color: $theme-blue;
+
+          a {
+            color: $theme-blue;
+          }
+        }
+      }
+    }
+
+    #f-left {
+      padding: 20px 0;
+      width: 260px;
+      height: 100%;
+      text-align: left;
+    }
+
+    #f-right {
+      padding: 20px 0;
+      width: 260px;
+      height: 100%;
+      text-align: right;
+    }
+
+    .f-title {
+      margin: 50px 20px 20px 20px;
+      color: $theme-grey;
+      font-size: 18px;
+    }
+
+    .f-text {
+      margin: 10px 20px 20px 20px;
+      color: $theme-milk;
+      font-size: 18px;
+
+      a {
+        color: $theme-milk;
+      }
+    }
+  }
+
+  .f-info {
+    width: 100%;
+    margin: 10px auto;
+    line-height: 14px;
+    color: $theme-grey;
+    text-align: center;
+  }
+}
+
