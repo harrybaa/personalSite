@@ -16,6 +16,10 @@ var Tools = function() {
     
     return defult;
   }
+
+  this.isArray = function(arr) {
+    return Object.prototype.toString.call(arr) === "[object Array]";
+  }
 }
 
 module.exports = Tools;
